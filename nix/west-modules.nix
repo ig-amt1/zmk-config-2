@@ -2,17 +2,17 @@
   {
     repo = "zmk";
     path = "zmk";
-    owner = "LOWPROKB";
-    rev = "a5d0e6f98de2cef88f03171b07ab12a13a7e2d1e";
-    sha256 = "9aqBTOcQsN1dA/9KfBjR2MQ2INnxSRsVIY9pCouwTNQ=";
+    owner = "zmkfirmware";
+    rev = "001105e31844f0f59b82a2e71a4c3ada980b931b";
+    sha256 = "49/AibjbjmQgCGKdMqu0FHgGv34bch17MHitHOp4WBI=";
     createDotGit = true;
   }
   {
     repo = "zephyr";
     path = "zephyr";
     owner = "zmkfirmware";
-    rev = "f2108f1646b964adffb9c7ed74641c828fef2a44";
-    sha256 = "jEy+4OdBieu1HnSFpd/aJoFBDI1cTwiyqaXuNesHg4w=";
+    rev = "8adeab429a2480198d22df9847933cfe3f9ea410";
+    sha256 = "+8QmBLroag8T8FNmTDmY3sgWBPuNPv6A8wVr54bDPs4=";
     createDotGit = true;
   }
   {
@@ -61,8 +61,8 @@
   {
     repo = "hal_nordic";
     path = "modules/hal/nordic";
-    rev = "f0d54d8449acbee49b3cebcef0e3e56640c50277";
-    sha256 = "i0kIgDO7D5E9/3+CpZ5T8INjSv5+JD4+eKg5E6OZaRY=";
+    rev = "fe0be3c3546e136a67264084c0e3edfd7354645a";
+    sha256 = "1+RK7H4p17jjxrNUfrtAOELvuCHpFv8DkATXhKjuLTE=";
   }
   {
     repo = "hal_nuvoton";
