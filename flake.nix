@@ -52,7 +52,7 @@
           west
           pyelftools
         ]);
-        dontConfigure = false;
+        dontFixup = true;
         CCACHE_DISABLE = 1;
         configurePhase =
           let
@@ -99,10 +99,12 @@
                 ''
                 west build -s zmk/app -b ${keyboard.board} -p -- -DZMK_CONFIG="$PWD/config" -DSHIELD=${keyboard.shield}
                 mv build/zephyr/zmk.uf2 out/${keyboard.shield}.uf2
+
                 cat > out/bin/install-${keyboard.shield}<<EOF
                 mount -U "${keyboard.diskUUID}" ${keyboard.mountPoint}
                 cp $out/${keyboard.shield}.uf2 ${keyboard.mountPoint}
                 EOF
+
                 chmod +x out/bin/install-${keyboard.shield}
                 ''
               )
