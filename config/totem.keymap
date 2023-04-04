@@ -126,7 +126,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
             &kp BR_Q       &kp BR_W        &kp BR_E        &kp BR_R     &kp BR_T    &kp BR_Y        &kp BR_U        &kp BR_I       &kp BR_O          &kp BR_P
        &hm LGUI BR_A  &hm LALT BR_S  &hm LSHFT BR_D  &hm LCTRL BR_F     &kp BR_G    &kp BR_H  &hm RCTRL BR_J  &hm RSHFT BR_K  &hm LALT BR_L  &hm RGUI BR_SEMI
 &none       &kp BR_Z       &kp BR_X        &kp BR_C      &lt 1 BR_V     &kp BR_B    &kp BR_N      &lt 1 BR_M    &kp BR_COMMA     &kp BR_DOT      &kp BR_SLASH  &none
-                                              &none       &lt 4 TAB  &lt 2 SPACE  &lt 3 BSPC     &lt 6 ENTER           &none
+                                              &none       &lt 4 TAB  &lt 2 SPACE  &lt 3 ENTER     &lt 6 BSPC           &none
             >;
         };
 
@@ -159,7 +159,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         function_layer {
             bindings = <
-            &none         &none         &none         &none  &none   &none       &kp F1   &kp F2   &kp F3   &kp F4
+            &out OUT_TOG         &none         &none         &none  &none   &none       &kp F1   &kp F2   &kp F3   &kp F4
             &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none   &none       &kp F5   &kp F6   &kp F7   &kp F8
 &none  &bt BT_CLR         &none         &none         &none  &none   &none       &kp F9  &kp F10  &kp F11  &kp F12  &none
                                         &none         &none  &none  &reset  &bootloader    &none
