@@ -159,10 +159,10 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         number_layer {
             bindings = <
-         &kp BR_DQT  &kp BR_EXCL     &kp BR_AT  &kp BR_HASH  &kp BR_DLLR   &kp BR_PLUS  &kp BR_N7  &kp BR_N8  &kp BR_N9   &kp BR_BSLH
+         &kp BR_DQT  &kp BR_EXCL     &kp BR_AT  &kp BR_HASH  &kp BR_DLLR  &kp BR_PLUS  &kp BR_N7  &kp BR_N8  &kp BR_N9   &kp BR_BSLH
        &kp BR_PRCNT  &kp BR_AMPS  &kp BR_ASTRK  &kp BR_LPAR  &kp BR_RPAR  &kp BR_MINUS  &kp BR_N4  &kp BR_N5  &kp BR_N6  &kp BR_COMMA
 &none  &kp BR_UNDER  &kp BR_LBRC   &kp BR_RBRC    &kp BR_LT    &kp BR_GT  &kp BR_COLON  &kp BR_N1  &kp BR_N2  &kp BR_N3  &kp BR_EQUAL  &none
-                                         &none        &none        &none    &kp BR_DOT  &kp BR_N0      &none
+                                         &none        &none        &none  &kp BR_ASTRK  &kp BR_N0      &none
             >;
         };
 
