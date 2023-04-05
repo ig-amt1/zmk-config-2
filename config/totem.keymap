@@ -105,7 +105,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         };
 
         quest {
-            bindings = <&kp QMARK>;
+            bindings = <&kp BR_QMARK>;
             key-positions = <29 28 27>;
             layers = <0>;
         };
@@ -168,9 +168,9 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         symbol_layer {
             bindings = <
-       &kp ASTRK    &kp DQT  &kp EXCL       &kp AT      &kp HASH  &kp AMPS    &kp LPAR         &kp RPAR  &kp MINUS  &kp EQUAL
-       &kp TILDE  &kp CARET  &kp BSLH    &kp SLASH      &kp PIPE     &none  &kp RSHIFT        &kp RCTRL   &kp LALT   &kp RGUI
-&none     &kp LT     &kp GT  &kp LBKT     &kp RBKT      &kp SEMI     &none    &kp LBRC  &kp RIGHT_BRACE   &kp APOS  &kp QMARK  &none
+       &kp BR_ASTRK    &kp BR_DQT  &kp BR_EXCL       &kp BR_AT     &kp BR_HASH     &kp BR_AMPS    &kp BR_LPAR &kp BR_RPAR  &kp BR_MINUS  &kp BR_EQUAL
+       &kp BR_TILDE  &kp BR_CIRC  &kp BR_BSLH    &kp BR_SLASH     &kp BR_PIPE     BR_GRAVE  &kp RSHIFT        &kp RCTRL   &kp LALT   &kp RGUI
+&none     &kp BR_LT     &kp BR_GT  &kp BR_LBKT     &kp BR_RBKT     &kp BR_SEMI     &kp BR_PRCNT    &kp BR_LBRC  &kp BR_RBRC   &kp BR_ACUT  &kp QMARK  &none
                                 &none  &kp BR_DLLR  &kp BR_UNDER     &none       &none            &none
             >;
         };
