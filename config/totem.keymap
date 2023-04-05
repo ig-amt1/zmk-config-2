@@ -14,7 +14,6 @@
 #define NAV  6
 #define FGM  7
 
-
 AC_KEY(A_acute, BR_A, BR_ACUT)
 AC_KEY(A_grave, BR_A, BR_GRAVE)
 AC_KEY(A_tilde, BR_A, BR_TILDE)
@@ -87,7 +86,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         caps {
             timeout-ms = <50>;
             bindings = <&caps_word>;
-            key-positions = <21 22 23>;
+            key-positions = <22 23 24>;
             layers = <0>;
         };
 
@@ -104,9 +103,26 @@ UNDEAD_KEY(grave, BR_GRAVE)
             key-positions = <8 9>;
             layers = <0>;
         };
+
+        quest {
+            bindings = <&kp QMARK>;
+            key-positions = <29 28 27>;
+            layers = <0>;
+        };
+
+        lgui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <10 11>;
+        };
+
+        rgui {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <19 18>;
+        };
     };
+
     macros {
-     close: close {
+        close: close {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
@@ -125,19 +141,19 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         base_layer {
             bindings = <
-            &kp BR_Q       &kp BR_W        &kp BR_E        &kp BR_R     &kp BR_T    &kp BR_Y        &kp BR_U        &kp BR_I       &kp BR_O          &kp BR_P
-       &hm LGUI BR_A  &hm LALT BR_S  &hm LSHFT BR_D  &hm LCTRL BR_F     &kp BR_G    &kp BR_H  &hm RCTRL BR_J  &hm RSHFT BR_K  &hm LALT BR_L  &hm RGUI BR_SEMI
-&none       &kp BR_Z       &kp BR_X        &kp BR_C      &kp BR_V     &kp BR_B    &kp BR_N      &lt 1 BR_M    &kp BR_COMMA     &kp BR_DOT      &kp BR_SLASH  &none
-                                              &none       &lt 1 TAB  &lt 2 SPACE  &lt 3 ENTER     &lt 6 BSPC           &none
+            &kp BR_Q       &kp BR_W        &kp BR_E        &kp BR_R     &kp BR_T     &kp BR_Y        &kp BR_U        &kp BR_I       &kp BR_O          &kp BR_P
+       &hm LGUI BR_A  &hm LALT BR_S  &hm LSHFT BR_D  &hm LCTRL BR_F     &kp BR_G     &kp BR_H  &hm RCTRL BR_J  &hm RSHFT BR_K  &hm RALT BR_L  &hm RGUI BR_SEMI
+&none       &kp BR_Z       &kp BR_X        &kp BR_C        &kp BR_V     &kp BR_B     &kp BR_N      &lt 1 BR_M    &kp BR_COMMA     &kp BR_DOT      &kp BR_SLASH  &none
+                                              &none       &lt 1 TAB  &lt 2 SPACE  &lt 3 ENTER      &lt 6 BSPC           &none
             >;
         };
 
         accents_layer {
             bindings = <
-       &none  &kp BR_CCED  &none       &none  &none  &none    &kp BR_CCED  &U_acute  &A_tilde  &O_tilde
-       &none        &none  &none  &kp LSHIFT  &none  &none    &E_acute  &I_acute  &A_acute  &O_acute
-&none  &none        &none  &none     &E_circ  &none  &none    &E_circ  &A_grave   &A_circ   &O_circ  &none
-                           &none    &E_acute  &none  &none    &E_circ    &none
+        &kp F1   &kp F2      &kp F3      &kp F4      &kp F5  &none  &kp BR_CCED  &U_acute  &A_tilde  &O_tilde
+        &kp F6   &kp F7      &kp F8      &kp F9     &kp F10  &none     &E_acute  &I_acute  &A_acute  &O_acute
+&none  &kp F11  &kp F12  &kp K_NEXT  &kp K_MUTE  &kp K_PREV  &none      &E_circ  &A_grave   &A_circ   &O_circ  &none
+                              &none      &trans       &none  &none      &E_circ     &none
             >;
         };
 
@@ -152,19 +168,19 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         symbol_layer {
             bindings = <
-       &kp BR_ASTRK   &kp BR_AMPS  &kp BR_LBRC  &kp BR_RBRC        &caret  &none       &none      &none     &none     &none
-        &kp BR_SEMI     &kp BR_AT  &kp BR_LPAR  &kp BR_RPAR        &grave  &none  &kp RSHIFT  &kp RCTRL  &kp LALT  &kp RGUI
-&none        &tilde  &kp BR_PRCNT  &kp BR_LBKT  &kp BR_RBKT   &kp BR_PIPE  &none       &none      &none     &none     &none  &none
-                                         &none  &kp BR_DLLR  &kp BR_UNDER  &none       &none      &none
+       &kp ASTRK    &kp DQT  &kp EXCL       &kp AT      &kp HASH  &kp AMPS    &kp LPAR         &kp RPAR  &kp MINUS  &kp EQUAL
+       &kp TILDE  &kp CARET  &kp BSLH    &kp SLASH      &kp PIPE     &none  &kp RSHIFT        &kp RCTRL   &kp LALT   &kp RGUI
+&none     &kp LT     &kp GT  &kp LBKT     &kp RBKT      &kp SEMI     &none    &kp LBRC  &kp RIGHT_BRACE   &kp APOS  &kp QMARK  &none
+                                &none  &kp BR_DLLR  &kp BR_UNDER     &none       &none            &none
             >;
         };
 
         function_layer {
             bindings = <
-            &none  &none         &none         &none         &none    &none       &kp F1   &kp F2   &kp F3   &kp F4
-            &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none    &none       &kp F5   &kp F6   &kp F7   &kp F8
-&none  &bt BT_CLR         &none   &out OUT_TOG    &none      &none    &none       &kp F9  &kp F10  &kp F11  &kp F12  &none
-                                        &none         &none  &none    &reset  &bootloader    &none
+            &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none   &none       &kp F1   &kp F2   &kp F3   &kp F4
+            &none  &out OUT_TOG         &none         &none  &none   &none       &kp F5   &kp F6   &kp F7   &kp F8
+&none  &bt BT_CLR         &none         &none         &none  &none   &none       &kp F9  &kp F10  &kp F11  &kp F12  &none
+                                        &none         &none  &none  &reset  &bootloader    &none
             >;
         };
 
@@ -179,10 +195,10 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         nav_layer {
             bindings = <
-       &kp PG_UP    &kp HOME      &kp END  &kp KP_PLUS       &none    &kp C_VOLUME_UP  &kp PG_UP    &kp UP  &kp PG_DN   &kp CAPS
-        &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT  &kp K_MUTE  &kp C_VOLUME_DOWN         &kp LEFT  &kp DOWN          &kp RIGHT   &kp DEL
-&none  &kp PG_DN  &kp K_COPY  &kp K_PASTE    &kp K_CUT   &kp PSCRN              &none            &none     &none              &none     &none  &none
-                                    &none        &lt 4       &none              &none            &none     &none
+             &kp PG_UP    &kp HOME      &kp END  &kp KP_PLUS       &none    &kp C_VOLUME_UP  &kp PG_UP    &kp UP  &kp PG_DN  &kp CAPS
+              &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT  &kp K_MUTE  &kp C_VOLUME_DOWN   &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
+&none  &kp PRINTSCREEN  &kp K_COPY  &kp K_PASTE    &kp K_CUT   &kp PSCRN              &none      &none     &none      &none     &none  &none
+                                          &none        &lt 4       &none              &none      &none     &none
             >;
         };
 
