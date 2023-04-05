@@ -143,7 +143,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         base_layer {
             bindings = <
             &kp BR_Q       &kp BR_W        &kp BR_E        &kp BR_R     &kp BR_T    &kp BR_Y        &kp BR_U        &kp BR_I       &kp BR_O          &kp BR_P
-       &hm LGUI BR_A  &hm LALT BR_S  &hm LSHFT BR_D  &hm LCTRL BR_F     &kp BR_G    &kp BR_H  &hm RCTRL BR_J  &hm RSHFT BR_K  &hm RALT BR_L  &hm RGUI BR_SEMI
+       &kp BR_A  &hm LALT BR_S  &hm LSHFT BR_D  &hm LCTRL BR_F     &kp BR_G    &kp BR_H  &hm RCTRL BR_J  &hm RSHFT BR_K  &hm RALT BR_L  &kp BR_SEMI
 &none       &kp BR_Z       &kp BR_X        &kp BR_C      &lt 1 BR_V     &kp BR_B    &kp BR_N      &lt 1 BR_M    &kp BR_COMMA     &kp BR_DOT      &kp BR_SLASH  &none
                                               &none       &lt 4 TAB  &lt 2 SPACE  &lt 3 ENTER     &lt 6 BSPC           &none
             >;
