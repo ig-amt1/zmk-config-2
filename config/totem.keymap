@@ -121,6 +121,12 @@ UNDEAD_KEY(grave, BR_GRAVE)
             key-positions = <19 18>;
             layers = <0>;
         };
+
+        lock {
+            bindings = <&lock>;
+            key-positions = <6 7 8>;
+            layers = <6>;
+        };
     };
 
     macros {
@@ -135,6 +141,90 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp F4>,
                 <&macro_release>,
                 <&kp LALT>;
+        };
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            label = "COPY";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            label = "PASTE";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            label = "CUT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
+        undo: undo {
+            compatible = "zmk,behavior-macro";
+            label = "UNDO";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp Z>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
+        guileft: guileft {
+            compatible = "zmk,behavior-macro";
+            label = "GUILEFT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp LEFT>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
+        };
+        guiright: guiright {
+            compatible = "zmk,behavior-macro";
+            label = "GUIRIGHT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+        lock: lock {
+            compatible = "zmk,behavior-macro";
+            label = "LOCK";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
         };
     };
 
@@ -197,10 +287,10 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         nav_layer {
             bindings = <
-       &kp PG_UP    &kp HOME      &kp END  &kp KP_PLUS       &none    &kp C_VOLUME_UP  &kp K_SCROLL_UP    &kp UP  &kp K_SCROLL_DOWN  &kp CAPS
-        &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT  &kp K_MUTE  &kp C_VOLUME_DOWN         &kp LEFT  &kp DOWN          &kp RIGHT   &kp DEL
-&none  &kp PG_DN  &kp K_COPY  &kp K_PASTE    &kp K_CUT   &kp PSCRN              &none            &none     &none              &none     &none  &none
-                                    &none        &none       &none              &none            &none     &none
+       &kp PG_UP  &kp HOME   &none  &none  &none    &kp C_VOLUME_UP  &kp K_SCROLL_UP    &kp UP  &kp K_SCROLL_DOWN  &kp CAPS
+       &kp PG_DN   &kp END   &none  &none  &none  &kp C_VOLUME_DOWN         &kp LEFT  &kp DOWN          &kp RIGHT   &kp DEL
+&none      &undo     &copy  &paste   &cut  &none         &kp C_MUTE         &guileft     &none          &guiright     &none  &none
+                             &none  &none  &none              &none            &none     &none
             >;
         };
 
