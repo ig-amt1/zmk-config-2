@@ -168,24 +168,14 @@ UNDEAD_KEY(grave, BR_GRAVE)
             >;
         };
 
-       // symbol_layer {
-       //     bindings = <
-    //   &kp BR_ASTRK   &kp BR_AMPS  &kp BR_LBRC  &kp BR_RBRC        &caret  &kp BR_ASTRK  &U_acute  &A_tilde  &O_tilde  &kp BR_CCED
-     //   &kp BR_SEMI     &kp BR_AT  &kp BR_LPAR  &kp BR_RPAR        &grave         &none  &I_acute  &A_acute  &O_acute     &E_acute
-// &none        &tilde  &kp BR_PRCNT  &kp BR_LBKT  &kp BR_RBKT   &kp BR_PIPE       &E_circ  &A_grave   &A_circ   &O_circ  &kp BR_HASH  &none
- //                                        &none  &kp BR_DLLR  &kp BR_UNDER         &none     &none     &none
-  //          >;
-    //    };
-
-
-       symbol_layer {
+        symbol_layer {
             bindings = <
-       &kp BR_ASTRK &kp BR_AMPS  &kp BR_LBRC  &kp BR_RBRC &kp BR_HASH          &caret    &U_acute  &A_tilde  &O_tilde  &kp BR_CCED
-         &kp BR_SEMI  &kp BR_AT    &kp BR_LPAR  &kp BR_RPAR &kp BR_DQT        &grave    &I_acute  &A_acute  &O_acute     &E_acute
-&none       &kp BR_EXCL  &kp BR_PRCNT &kp BR_LBKT  &kp BR_RBKT   &kp BR_PIPE     &A_grave  &E_circ   &A_circ   &O_circ    &tilde  &none
-                                         &none  &kp BR_DLLR  &kp BR_UNDER         &none     &none     &none
-            >;
-        };
+       &kp BR_ASTRK   &kp BR_AMPS  &kp BR_LBRC  &kp BR_RBRC &kp BR_HASH      &caret    &U_acute  &A_tilde  &O_tilde  &kp BR_CCED
+        &kp BR_SEMI     &kp BR_AT  &kp BR_LPAR  &kp BR_RPAR &kp BR_DQT       &grave    &I_acute  &A_acute  &O_acute     &E_acute
+ &none        &kp BR_EXCL  &kp BR_PRCNT  &kp BR_LBKT  &kp BR_RBKT   &kp BR_PIPE       &A_grave  &E_circ   &A_circ   &O_circ    &tilde  &none
+                                        &none  &kp BR_DLLR  &kp BR_UNDER         &none     &none     &none
+           >;
+      };
 
 
 
