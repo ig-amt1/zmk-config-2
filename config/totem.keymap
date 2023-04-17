@@ -146,7 +146,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
        &kp BR_Q       &kp BR_W        &kp BR_E        &kp BR_R     &kp BR_T     &kp BR_Y        &kp BR_U        &kp BR_I       &kp BR_O      &kp BR_P
        &kp BR_A  &hm LALT BR_S  &hm LSHFT BR_D  &hm LCTRL BR_F     &kp BR_G     &kp BR_H  &hm RCTRL BR_J  &hm RSHFT BR_K  &hm RALT BR_L   &kp BR_SEMI
 &none  &kp BR_Z       &kp BR_X        &kp BR_C      &lt 1 BR_V     &kp BR_B     &kp BR_N      &lt 1 BR_M    &kp BR_COMMA     &kp BR_DOT  &kp BR_SLASH  &none
-                                         &none       &lt 4 TAB  &lt 2 SPACE  &lt 3 ENTER      &lt 6 BSPC           &none
+                                         &none       &lt 4 TAB  &lt 2 SPACE     &lt 3 ENTER      &lt 6 BSPC           &none
             >;
         };
 
@@ -155,25 +155,25 @@ UNDEAD_KEY(grave, BR_GRAVE)
             &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &none        &none  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
             &none         &none  &out OUT_TOG         &none        &none        &none         &none  &out OUT_TOG         &none  &none
 &none  &bt BT_CLR         &none         &none         &none        &none        &none         &none         &none    &bt BT_CLR  &none  &none
-                                        &none        &reset  &bootloader  &bootloader        &reset         &none
+                                        &none        &reset  &bootloader        &bootloader        &reset         &none
             >;
         };
 
         number_layer {
             bindings = <
          &kp BR_DQT  &kp BR_EXCL     &kp BR_AT  &kp BR_HASH  &kp BR_DLLR   &kp BR_PLUS  &kp BR_N7  &kp BR_N8  &kp BR_N9   &kp BR_BSLH
-       &kp BR_PRCNT  &kp BR_AMPS  &kp BR_ASTRK  &kp BR_LPAR  &kp BR_RPAR  &kp BR_MINUS  &kp BR_N4  &kp BR_N5  &kp BR_N6  &kp BR_COMMA
-&none  &kp BR_UNDER  &kp BR_LBRC   &kp BR_RBRC    &kp BR_LT    &kp BR_GT  &kp BR_COLON  &kp BR_N1  &kp BR_N2  &kp BR_N3  &kp BR_EQUAL  &none
-                                         &none        &none        &none  &kp BR_ASTRK  &kp BR_N0      &none
+       &kp BR_PRCNT  &kp BR_AMPS  &kp BR_ASTRK  &kp BR_LPAR  &kp BR_RPAR   &kp BR_MINUS  &kp BR_N4  &kp BR_N5  &kp BR_N6  &kp BR_COMMA
+&none  &kp BR_UNDER  &kp BR_LBRC   &kp BR_RBRC    &kp BR_LT    &kp BR_GT   &kp BR_COLON  &kp BR_N1  &kp BR_N2  &kp BR_N3  &kp BR_EQUAL  &none
+                                         &none        &none        &none   &kp BR_ASTRK  &kp BR_N0      &none
             >;
         };
 
         symbol_layer {
             bindings = <
-       &kp BR_ASTRK   &kp BR_AMPS  &kp BR_LBRC  &kp BR_RBRC &kp BR_HASH      &caret    &U_acute  &A_tilde  &O_tilde  &kp BR_CCED
-        &kp BR_SEMI     &kp BR_AT  &kp BR_LPAR  &kp BR_RPAR &kp BR_DQT       &grave    &I_acute  &A_acute  &O_acute     &E_acute
- &none        &kp BR_EXCL  &kp BR_PRCNT  &kp BR_LBKT  &kp BR_RBKT   &kp BR_PIPE       &A_grave  &E_circ   &A_circ   &O_circ    &tilde  &none
-                                        &none  &kp BR_DLLR  &kp BR_UNDER         &none     &none     &none
+       &kp BR_ASTRK  &kp BR_AMPS   &kp BR_LBRC  &kp BR_RBRC &kp BR_HASH      &caret    &U_acute  &A_tilde  &O_tilde  &kp BR_CCED
+       &kp BR_SEMI   &kp BR_AT     &kp BR_LPAR  &kp BR_RPAR &kp BR_DQT       &grave    &I_acute  &A_acute  &O_acute  &E_acute
+ &none &kp BR_EXCL   &kp BR_PRCNT  &kp BR_LBKT  &kp BR_RBKT &kp BR_PIPE      &A_grave  &E_circ   &A_circ   &O_circ   &tilde     &none
+                                        &none  &kp BR_DLLR  &kp BR_UNDER     &none     &none     &none
            >;
       };
 
@@ -182,37 +182,37 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         function_layer {
             bindings = <
-       &none  &none  &none  &none  &none  &none  &kp F1   &kp F2   &kp F3   &kp F4
-       &none  &none  &none  &none  &none  &none  &kp F5   &kp F6   &kp F7   &kp F8
-&none  &none  &none  &none  &none  &none  &none  &kp F9  &kp F10  &kp F11  &kp F12  &none
-                     &none  &none  &none  &none   &none    &none
+       &none  &none  &none  &none  &none     &none  &kp F1   &kp F2   &kp F3   &kp F4
+       &none  &none  &none  &none  &none     &none  &kp F5   &kp F6   &kp F7   &kp F8
+&none  &none  &none  &none  &none  &none     &none  &kp F9  &kp F10  &kp F11  &kp F12  &none
+                     &none  &none  &none     &none  &none    &none
             >;
         };
 
         game_layer {
             bindings = <
-         &kp TAB  &kp BR_Q  &kp BR_W   &kp BR_E   &kp BR_R  &kp C_VOL_UP  &kp BR_Y      &kp BR_N    &kp BR_V    &tog 5
-       &kp LSHFT  &kp BR_A  &kp BR_S   &kp BR_D   &kp BR_F  &kp C_VOL_DN  &kp BR_T      &kp BR_M    &kp BR_I     &none
+         &kp TAB  &kp BR_Q  &kp BR_W   &kp BR_E   &kp BR_R      &kp C_VOL_UP  &kp BR_Y      &kp BR_N    &kp BR_V    &tog 5
+       &kp LSHFT  &kp BR_A  &kp BR_S   &kp BR_D   &kp BR_F      &kp C_VOL_DN  &kp BR_T      &kp BR_M    &kp BR_I     &none
 &none  &kp LCTRL  &kp BR_Z  &kp BR_X   &kp BR_C   &kp BR_B      &kp BR_N  &kp BR_M  &kp BR_COMMA  &kp BR_DOT  &kp LGUI  &none
-                               &none  &lt 7 ESC  &kp SPACE         &none     &none         &none
+                               &none  &lt 7 ESC  &kp SPACE      &none     &none         &none
             >;
         };
 
         nav_layer {
             bindings = <
-       &kp PG_UP    &kp HOME      &kp END  &kp KP_PLUS       &none    &kp C_VOLUME_UP  &kp K_SCROLL_UP    &kp UP  &kp K_SCROLL_DOWN  &kp CAPS
-        &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT  &kp K_MUTE  &kp C_VOLUME_DOWN         &kp LEFT  &kp DOWN          &kp RIGHT   &kp DEL
-&none  &kp PG_DN  &kp K_COPY  &kp K_PASTE    &kp K_CUT   &kp PSCRN              &none            &none     &none              &none     &none  &none
-                                    &none        &none       &none              &none            &none     &none
+       &kp PG_UP    &kp HOME      &kp END  &kp KP_PLUS       &none      &kp C_VOLUME_UP  &kp K_SCROLL_UP    &kp UP  &kp K_SCROLL_DOWN  &kp CAPS
+        &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT  &kp K_MUTE      &kp C_VOLUME_DOWN         &kp LEFT  &kp DOWN          &kp RIGHT   &kp DEL
+&none  &kp PG_DN  &kp K_COPY  &kp K_PASTE    &kp K_CUT   &kp PSCRN      &none            &none     &none              &none     &none  &none
+                                    &none        &none       &none      &none            &none     &none
             >;
         };
 
         fgame_layer {
             bindings = <
-       &kp BR_N1  &kp BR_N2  &kp BR_N3  &kp BR_N4  &kp BR_N5  &kp C_VOL_UP  &kp BR_Y      &kp BR_N    &kp BR_V  &kp CAPS
-          &kp F6   &kp BR_B   &kp BR_M   &kp BR_T   &kp BR_G  &kp C_VOL_DN  &kp BR_T      &kp BR_M    &kp BR_I     &none
-&none     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5      &kp BR_N  &kp BR_M  &kp BR_COMMA  &kp BR_DOT  &kp LGUI  &none
-                                 &none      &none      &none         &none     &none         &none
+       &kp BR_N1  &kp BR_N2  &kp BR_N3  &kp BR_N4  &kp BR_N5     &kp C_VOL_UP  &kp BR_Y      &kp BR_N    &kp BR_V  &kp CAPS
+          &kp F6   &kp BR_B   &kp BR_M   &kp BR_T   &kp BR_G     &kp C_VOL_DN  &kp BR_T      &kp BR_M    &kp BR_I     &none
+&none     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp BR_N  &kp BR_M  &kp BR_COMMA  &kp BR_DOT  &kp LGUI  &none
+                                 &none      &none      &none     &none     &none         &none
             >;
         };
     };
