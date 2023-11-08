@@ -139,17 +139,17 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp LALT>;
         };
-//cao: cao {
-//    compatible = "zmk,behavior-macro";
-//    label = "CAO";
-//    #binding-cells = <0>;
-//    bindings = 
-//            <&macro_press>,
-//            <&BR_CCED>,
-//            <&A_tilde>,
-//            <&kp o>,
-//            <&macro_release>;
-//    };
+cao: cao {
+   compatible = "zmk,behavior-macro";
+ label = "CAO";
+   #binding-cells = <0>;
+   bindings = 
+           <&macro_press>,
+          <&BR_CCED>,
+          <&A_tilde>,
+           <&kp BR_O >,
+           <&macro_release>;
+   };
               
         copy: copy {
             compatible = "zmk,behavior-macro";
