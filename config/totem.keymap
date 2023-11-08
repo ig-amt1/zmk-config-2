@@ -6,7 +6,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
-
 #define NUM  1
 #define SYM  2
 #define FUN  3
