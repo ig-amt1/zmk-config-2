@@ -149,7 +149,7 @@ cao: cao {
         <&macro_tap>,
         <&A_tilde>,
         <&macro_tap>,
-        <&kp BR_O>;
+        <&kp O>;
 };
 
         
