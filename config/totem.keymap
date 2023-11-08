@@ -144,11 +144,11 @@ cao: cao {
    label = "CAO";
    #binding-cells = <0>;
    bindings = 
-           <&macro_press>,
-          <&kp BR_CCED>,
-          <&A_tilde>,
-           <&kp BR_O >,
-           <&macro_release>;
+        <&macro_tap>,
+        <&kp BR_CCED>,
+        <&A_tilde>,
+        <&kp BR_O >;
+        
    };
               
         copy: copy {
