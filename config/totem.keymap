@@ -6,13 +6,13 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
-#define BLE  1
-#define NUM  2
-#define SYM  3
-#define FUN  4
-#define gam  5
-#define NAV  6
-#define FGM  7
+
+#define NUM  1
+#define SYM  2
+#define FUN  3
+#define gam  4
+#define NAV  5
+#define FGM  6
 
 AC_KEY(A_acute, BR_A, BR_ACUT)
 AC_KEY(A_grave, BR_A, BR_GRAVE)
@@ -140,6 +140,12 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp LALT>;
         };
+cao: cao {
+            compatible = "zmk,behavior-macro";
+            label = "CAO";
+            #binding-cells = <0>;
+            bindings = <&BR_CCED &A_tilde &kp o>;
+        };
         copy: copy {
             compatible = "zmk,behavior-macro";
             label = "COPY";
@@ -234,18 +240,11 @@ UNDEAD_KEY(grave, BR_GRAVE)
        &kp BR_Q  &kp BR_W       &kp BR_E        &kp BR_R        &kp BR_T     &kp BR_Y     &kp BR_U        &kp BR_I        &kp BR_O       &kp BR_P
        &kp BR_A  &hm LALT BR_S  &hm LSHFT BR_D  &hm LCTRL BR_F  &kp BR_G     &kp BR_H     &hm RCTRL BR_J  &hm RSHFT BR_K  &hm RALT BR_L  &kp BR_SEMI
 &none  &kp BR_Z  &kp BR_X       &kp BR_C        &kp BR_V        &kp BR_B     &kp BR_N     &kp BR_M        &kp BR_COMMA    &kp BR_DOT     &kp BR_SLASH  &none
-                                &none           &lt 4 TAB       &lt 2 SPACE  &lt 3 ENTER  &lt 6 BSPC      &none
+                                &none           &lt 3 TAB       &lt 1 SPACE  &lt 2 ENTER  &lt 5 BSPC      &none
             >;
         };
 
-        ble_layer {
-            bindings = <
-       &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none        &none        &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
-       &none       &none         &out OUT_TOG  &none         &none        &none        &none         &out OUT_TOG  &none         &none
-&none  &bt BT_CLR  &none         &none         &none         &none        &none        &none         &none         &bt BT_CLR    &none  &none
-                                 &none         &sys_reset    &bootloader  &bootloader  &sys_reset    &none
-            >;
-        };
+       
 
         number_layer {
             bindings = <
@@ -261,7 +260,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
        &kp BR_ASTRK  &kp BR_AMPS   &kp BR_LBRC  &kp BR_RBRC  &kp BR_HASH   &caret    &U_acute  &A_tilde  &O_tilde  &kp BR_CCED
        &kp BR_SEMI   &kp BR_AT     &kp BR_LPAR  &kp BR_RPAR  &kp BR_DQT    &grave    &I_acute  &A_acute  &O_acute  &E_acute
 &none  &kp BR_EXCL   &kp BR_PRCNT  &kp BR_LBKT  &kp BR_RBKT  &kp BR_PIPE   &A_grave  &E_circ   &A_circ   &O_circ   &tilde       &none
-                                   &none        &kp BR_DLLR  &kp BR_UNDER  &none     &none     &none
+                                   &none        &kp BR_DLLR  &CAO  &none     &none     &none
             >;
         };
 
