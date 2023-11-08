@@ -146,10 +146,9 @@ UNDEAD_KEY(grave, BR_GRAVE)
    bindings = 
         <&macro_tap>,
         <&kp BR_CCED>,
-        <&macro_tap>,
-        <&A_tilde>,
-        <&macro_tap>,
         <&macro_tap_time 20>,
+        <&A_tilde>,
+        <&macro_tap_time 25>,
         <&kp O>;
 };
 
