@@ -149,7 +149,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         <&macro_tap>,
         <&A_tilde>,
         <&macro_tap>,
-        <&macro_tap_time 20>;
+        <&macro_tap_time 20>,
         <&kp O>;
 };
 
