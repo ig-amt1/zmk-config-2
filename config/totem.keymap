@@ -139,17 +139,17 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp LALT>;
         };
-cao: cao {
-    compatible = "zmk,behavior-macro";
-    label = "CAO";
-    #binding-cells = <0>;
-    bindings = 
-        <&macro_press>,
-        <&BR_CCED>,
-        <&A_tilde>,
-        <&kp o>,
-        <&macro_release>;
-};
+//cao: cao {
+//    compatible = "zmk,behavior-macro";
+//    label = "CAO";
+//    #binding-cells = <0>;
+//    bindings = 
+//            <&macro_press>,
+//            <&BR_CCED>,
+//            <&A_tilde>,
+//            <&kp o>,
+//            <&macro_release>;
+//    };
               
         copy: copy {
             compatible = "zmk,behavior-macro";
@@ -265,7 +265,7 @@ cao: cao {
        &kp BR_ASTRK  &kp BR_AMPS   &kp BR_LBRC  &kp BR_RBRC  &kp BR_HASH   &caret    &U_acute  &A_tilde  &O_tilde  &kp BR_CCED
        &kp BR_SEMI   &kp BR_AT     &kp BR_LPAR  &kp BR_RPAR  &kp BR_DQT    &grave    &I_acute  &A_acute  &O_acute  &E_acute
 &none  &kp BR_EXCL   &kp BR_PRCNT  &kp BR_LBKT  &kp BR_RBKT  &kp BR_PIPE   &A_grave  &E_circ   &A_circ   &O_circ   &tilde       &none
-                                   &none        &kp BR_DLLR  &CAO  &none     &none     &none
+                                   &none        &kp BR_DLLR  &none &none     &none     &none
             >;
         };
 
