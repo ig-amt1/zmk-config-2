@@ -146,8 +146,8 @@ cao: cao {
    bindings = 
         <&macro_tap>,
         <&kp BR_CCED>,
-        <&A_tilde>,
-        <&kp BR_O >;
+        <&kp BR_O>,
+        <&A_tilde>;
         
    };
               
