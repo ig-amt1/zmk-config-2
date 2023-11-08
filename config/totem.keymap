@@ -149,11 +149,11 @@ UNDEAD_KEY(grave, BR_GRAVE)
         <&macro_tap>,
         <&A_tilde>,
         <&macro_tap>,
-        <&timer 20>, // Ação de atraso de 20 milissegundos
+        <&macro_tap_time 20>;
         <&kp O>;
 };
 
-            //    <&macro_tap_time 20>;
+            
       
         copy: copy {
             compatible = "zmk,behavior-macro";
