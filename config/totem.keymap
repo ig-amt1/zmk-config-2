@@ -139,22 +139,19 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp LALT>;
         };
-cao: cao {
-   compatible = "zmk,behavior-macro";
-   label = "CAO";
-   #binding-cells = <0>;
-   bindings = 
-        <&macro_tap>,
-        <&kp BR_CCED>,
-        <&macro_tap>,
-        <&A_tilde>,
-        <&macro_tap>,
-        <&kp O>;
-};
-
-        
- 
-              
+        cao: cao {
+            compatible = "zmk,behavior-macro";
+            label = "CAO";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp BR_CCED>,
+                <&macro_tap>,
+                <&A_tilde>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_tap_time 20>;
+        };
         copy: copy {
             compatible = "zmk,behavior-macro";
             label = "COPY";
@@ -253,8 +250,6 @@ cao: cao {
             >;
         };
 
-       
-
         number_layer {
             bindings = <
        &kp BR_DQT    &kp BR_EXCL  &kp BR_AT     &kp BR_HASH  &kp BR_DLLR  &kp BR_PLUS   &kp BR_N7  &kp BR_N8  &kp BR_N9  &kp BR_BSLH
@@ -266,10 +261,10 @@ cao: cao {
 
         symbol_layer {
             bindings = <
-       &kp BR_ASTRK  &kp BR_AMPS   &kp BR_LBRC  &kp BR_RBRC  &kp BR_HASH   &caret    &U_acute  &A_tilde  &O_tilde  &kp BR_CCED
-       &kp BR_SEMI   &kp BR_AT     &kp BR_LPAR  &kp BR_RPAR  &kp BR_DQT    &grave    &I_acute  &A_acute  &O_acute  &E_acute
-&none  &kp BR_EXCL   &kp BR_PRCNT  &kp BR_LBKT  &kp BR_RBKT  &kp BR_PIPE   &A_grave  &E_circ   &A_circ   &O_circ   &tilde       &none
-                                   &none        &kp BR_DLLR  &cao &none     &none     &none
+       &kp BR_ASTRK  &kp BR_AMPS   &kp BR_LBRC  &kp BR_RBRC  &kp BR_HASH  &caret    &U_acute  &A_tilde  &O_tilde  &kp BR_CCED
+       &kp BR_SEMI   &kp BR_AT     &kp BR_LPAR  &kp BR_RPAR  &kp BR_DQT   &grave    &I_acute  &A_acute  &O_acute  &E_acute
+&none  &kp BR_EXCL   &kp BR_PRCNT  &kp BR_LBKT  &kp BR_RBKT  &kp BR_PIPE  &A_grave  &E_circ   &A_circ   &O_circ   &tilde       &none
+                                   &none        &kp BR_DLLR  &cao         &none     &none     &none
             >;
         };
 
