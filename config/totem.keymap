@@ -146,11 +146,7 @@ cao: cao {
             #binding-cells = <0>;
             bindings = 
                 <&macro_tap>,
-                <&BR_CCED>,
-                <&macro_tap>,
-                <&A_tilde>, 
-                <&macro_tap>,
-                <&kp o>;
+                <&BR_CCED &A_tilde &kp o>; 
         };
         copy: copy {
             compatible = "zmk,behavior-macro";
