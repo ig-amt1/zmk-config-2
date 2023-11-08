@@ -141,11 +141,11 @@ UNDEAD_KEY(grave, BR_GRAVE)
         };
 cao: cao {
    compatible = "zmk,behavior-macro";
- label = "CAO";
+   label = "CAO";
    #binding-cells = <0>;
    bindings = 
            <&macro_press>,
-          <&BR_CCED>,
+          <&kp BR_CCED>,
           <&A_tilde>,
            <&kp BR_O >,
            <&macro_release>;
