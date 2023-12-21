@@ -289,7 +289,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
        &kp TAB    &kp BR_Q  &kp BR_W  &kp BR_E   &kp BR_R   &kp C_VOL_UP  &kp BR_Y  &kp BR_N      &kp BR_V    &tog 5
        &kp LSHFT  &kp BR_A  &kp BR_S  &kp BR_D   &kp BR_F   &kp C_VOL_DN  &kp BR_T  &kp BR_M      &kp BR_I    &none
 &none  &kp LCTRL  &kp BR_Z  &kp BR_X  &kp BR_C   &kp BR_B   &kp BR_N      &kp BR_M  &kp BR_COMMA  &kp BR_DOT  &kp LGUI  &none
-                            &none     &lt 7 ESC  &kp SPACE  &none         &none     &none
+                            &none     &lt 6 ESC  &kp SPACE  &none         &none     &none
             >;
         };
 
