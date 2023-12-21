@@ -61,7 +61,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         game {
             timeout-ms = <50>;
-            bindings = <&tog 5>;
+            bindings = <&tog 4>;
             key-positions = <34 13 12>;
             layers = <0>;
         };
@@ -139,21 +139,20 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp LALT>;
         };
-       cao: cao {
-   compatible = "zmk,behavior-macro";
-   label = "CAO";
-   #binding-cells = <0>;
-   bindings = 
-        <&macro_tap>,
-        <&kp BR_CCED>,
-        <&macro_tap_time 20>,
-        <&A_tilde>,
-        <&macro_tap_time 25>,
-        <&kp O>;
-};
 
-            
-      
+        cao: cao {
+            compatible = "zmk,behavior-macro";
+            label = "CAO";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp BR_CCED>,
+                <&macro_tap_time 20>,
+                <&A_tilde>,
+                <&macro_tap_time 25>,
+                <&kp O>;
+        };
+
         copy: copy {
             compatible = "zmk,behavior-macro";
             label = "COPY";
@@ -166,6 +165,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp LCTRL>;
         };
+
         paste: paste {
             compatible = "zmk,behavior-macro";
             label = "PASTE";
@@ -178,6 +178,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp LCTRL>;
         };
+
         cut: cut {
             compatible = "zmk,behavior-macro";
             label = "CUT";
@@ -190,6 +191,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp LCTRL>;
         };
+
         undo: undo {
             compatible = "zmk,behavior-macro";
             label = "UNDO";
@@ -202,6 +204,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp LCTRL>;
         };
+
         guileft: guileft {
             compatible = "zmk,behavior-macro";
             label = "GUILEFT";
@@ -214,6 +217,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp LEFT_GUI>;
         };
+
         guiright: guiright {
             compatible = "zmk,behavior-macro";
             label = "GUIRIGHT";
@@ -226,6 +230,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp LEFT_WIN>;
         };
+
         lock: lock {
             compatible = "zmk,behavior-macro";
             label = "LOCK";
