@@ -148,7 +148,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_tap>,
                 <&kp BR_CCED>,
                 <&macro_tap_time 20>,
-                <&A_tilde>,
+                <&A_tilde>;
         };
 
         copy: copy {
