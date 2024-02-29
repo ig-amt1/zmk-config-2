@@ -166,7 +166,91 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp RALT>;
         };
 
+   eagud:eagud {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp RALT>;
+        };
 
+   aagud: aagud {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp RALT>;
+        };
+   iagud: iagud {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp I>,
+                <&macro_release>,
+                <&kp RALT>;
+        };
+   oagud: oagud {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_release>,
+                <&kp RALT>;
+        };
+
+
+   uagud: uagud {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp U>,
+                <&macro_release>,
+                <&kp RALT>;
+        };
+
+   atil: atil {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp TILDE>,
+                <&macro_tap>,
+                <&kp A>;
+        };
+
+   acirc: acirc {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp CARET>,
+                <&macro_tap>,
+                <&kp A>;
+        };
 
 
 
