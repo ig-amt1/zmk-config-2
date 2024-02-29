@@ -1,6 +1,6 @@
-#include <behaviors.dtsi>
 #include "keys_br_abnt2.h"
 #include "helper.h"
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -210,7 +210,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         base_layer {
             bindings = <
-       &kp BR_Q  &kp BR_W       &kp BR_E        &kp BR_R        &kp BR_T     &kp BR_Y     &kp BR_U        &kp BR_I        &kp BR_O       &kp BR_P
+       &kp Q     &kp BR_W       &kp BR_E        &kp BR_R        &kp BR_T     &kp BR_Y     &kp BR_U        &kp BR_I        &kp BR_O       &kp BR_P
        &kp BR_A  &hm LALT BR_S  &hm LSHFT BR_D  &hm LCTRL BR_F  &kp BR_G     &kp BR_H     &hm RCTRL BR_J  &hm RSHFT BR_K  &hm RALT BR_L  &kp BR_SEMI
 &none  &kp BR_Z  &kp BR_X       &kp BR_C        &kp BR_V        &kp BR_B     &kp BR_N     &kp BR_M        &kp BR_COMMA    &kp BR_DOT     &kp BR_SLASH  &none
                                 &none           &lt 3 TAB       &lt 1 SPACE  &lt 2 ENTER  &lt 5 BSPC      &none
