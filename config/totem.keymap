@@ -14,7 +14,7 @@
 #define NAV  5
 #define FGM  6
 
-/* AC_KEY(A_acute, BR_A, BR_ACUT)
+AC_KEY(A_acute, BR_A, BR_ACUT)
 AC_KEY(A_grave, BR_A, BR_GRAVE)
 AC_KEY(A_tilde, BR_A, BR_TILDE)
 AC_KEY(A_circ,  BR_A, BR_CIRC)
@@ -33,7 +33,7 @@ AC_KEY(U_acute, BR_U, BR_ACUT)
 UNDEAD_KEY(tilde, BR_TILDE)
 UNDEAD_KEY(caret, BR_CIRC)
 UNDEAD_KEY(grave, BR_GRAVE)
-*/
+
 
 &lt {
     tapping-term-ms = <TAPPING_TERM>;
@@ -152,99 +152,8 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp LALT>;
         };
 
-        cedilha: cedilha {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp COMMA>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-
-        eagud: eagud {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp E>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-
-        aagud: aagud {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp A>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-
-        iagud: iagud {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp I>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-
-        oagud: oagud {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp O>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-
-        uagud: uagud {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp U>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-
-        atil: atil {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp TILDE>, <&macro_tap>, <&kp A>;
-        };
-
-        acirc: acirc {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp CARET>, <&macro_tap>, <&kp A>;
-        };
-
-        /*  cao: cao {
+      
+          cao: cao {
             compatible = "zmk,behavior-macro";
             label = "CAO";
             #binding-cells = <0>;
@@ -253,7 +162,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp BR_CCED>,
                 <&macro_tap_time 20>,
                 <&A_tilde>;
-        }; */
+        }; 
 
         guileft: guileft {
             compatible = "zmk,behavior-macro";
@@ -360,11 +269,13 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         symbol_layer {
             bindings = <
-       &kp ASTERISK     &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH           &kp CARET  &ac_otil  &ac_oacu  &ac_uacu  &cedilha
-       &kp SEMICOLON    &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp TILDE  &acirc    &atil     &aagud    &eagud
-&none  &kp EXCLAMATION  &kp PERCENT    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &none      &ac_acir  &ac_ocir  &ac_ecir  &none     &none
-                                       &none                 &kp GRAVE              &none              &none      &none     &none
-            >;
+        &kp ASTERISK     &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH           &kp CARET  &U_acute  &A_tilde  &O_tilde  &kp BR_CCED 
+        &kp SEMICOLON    &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp GRAVE  &I_acute  &A_acute  &O_acute  &E_acute
+ &none  &kp EXCLAMATION  &kp PERCENT    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &A_grave   &E_circ   &A_circ   &O_circ   &kp TILDE    &none
+                                         &none                &kp DOLLAR             &cao               &none      &none     &none
+
+
+             >;
         };
 
         function_layer {
