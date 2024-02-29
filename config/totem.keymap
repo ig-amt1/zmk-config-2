@@ -361,7 +361,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         symbol_layer {
             bindings = <
        &kp ASTERISK     &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH           &kp CARET  &ac_otil  &ac_oacu  &ac_uacu  &cedilha
-       &kp SEMICOLON    &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &ac_agrv   &acirc    &atil     &aagud    &eagud
+       &kp SEMICOLON    &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp TILDE  &acirc    &atil     &aagud    &eagud
 &none  &kp EXCLAMATION  &kp PERCENT    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &none      &ac_acir  &ac_ocir  &ac_ecir  &none     &none
                                        &none                 &kp GRAVE              &none              &none      &none     &none
             >;
