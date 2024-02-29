@@ -1,10 +1,10 @@
 #include "keys_br_abnt2.h"
 #include "helper.h"
+#include "accents.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "accents.dtsi"
 
 #define BASE 0
 #define NUM  1
@@ -34,7 +34,6 @@ UNDEAD_KEY(tilde, BR_TILDE)
 UNDEAD_KEY(caret, BR_CIRC)
 UNDEAD_KEY(grave, BR_GRAVE)
 */
-
 
 &lt {
     tapping-term-ms = <TAPPING_TERM>;
@@ -153,7 +152,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp LALT>;
         };
 
-   cedilha: cedilha {
+        cedilha: cedilha {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
@@ -166,7 +165,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp RALT>;
         };
 
-   eagud:eagud {
+        eagud: eagud {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
@@ -179,7 +178,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp RALT>;
         };
 
-   aagud: aagud {
+        aagud: aagud {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
@@ -191,7 +190,8 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp RALT>;
         };
-   iagud: iagud {
+
+        iagud: iagud {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
@@ -203,7 +203,8 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&macro_release>,
                 <&kp RALT>;
         };
-   oagud: oagud {
+
+        oagud: oagud {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
@@ -216,8 +217,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp RALT>;
         };
 
-
-   uagud: uagud {
+        uagud: uagud {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
@@ -230,41 +230,21 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp RALT>;
         };
 
-   atil: atil {
+        atil: atil {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp TILDE>,
-                <&macro_tap>,
-                <&kp A>;
+            bindings = <&macro_tap>, <&kp TILDE>, <&macro_tap>, <&kp A>;
         };
 
-   acirc: acirc {
+        acirc: acirc {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp CARET>,
-                <&macro_tap>,
-                <&kp A>;
+            bindings = <&macro_tap>, <&kp CARET>, <&macro_tap>, <&kp A>;
         };
 
-
-
-
-
-
-
-
-
-
-
-
-
-      /*  cao: cao {
+        /*  cao: cao {
             compatible = "zmk,behavior-macro";
             label = "CAO";
             #binding-cells = <0>;
@@ -380,9 +360,9 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         symbol_layer {
             bindings = <
-       &kp ASTERISK     &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH           &kp CARET   &ac_otil  &ac_oacu  &ac_uacu &ac_ccdi
-       &kp SEMICOLON    &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &ac_agrv   &ac_atil  &ac_aacu  &ac_eacu  &ac_iacu
-&none  &kp EXCLAMATION  &kp PERCENT    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &none      &ac_acir  &ac_ocir  &ac_ecir  &none       &none
+       &kp ASTERISK     &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH           &kp CARET  &ac_otil  &ac_oacu  &ac_uacu  &cedilha
+       &kp SEMICOLON    &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &ac_agrv   &acirc    &atil     &aagud    &eagud
+&none  &kp EXCLAMATION  &kp PERCENT    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &none      &ac_acir  &ac_ocir  &ac_ecir  &none     &none
                                        &none                 &kp GRAVE              &none              &none      &none     &none
             >;
         };
