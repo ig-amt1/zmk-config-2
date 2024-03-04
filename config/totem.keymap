@@ -145,6 +145,58 @@ UNDEAD_KEY(grave, BR_GRAVE)
             bindings = <&kp NUMBER_2>;
             key-positions = <1 11>;
         };
+        n3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <2 12>;
+            layers = <0>;
+        };
+
+        n4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <3 13>;
+            layers = <0>;
+        };
+
+        n5 {
+            bindings = <&kp NUMBER_5>;
+            key-positions = <4 14>;
+            layers = <0>;
+        };
+
+        n6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <5 15>;
+            layers = <0>;
+        };
+
+        n7 {
+            bindings = <&kp NUMBER_7>;
+            key-positions = <6 16>;
+            layers = <0>;
+        };
+
+        n8 {
+            bindings = <&kp NUMBER_8>;
+            key-positions = <7 17>;
+            layers = <0>;
+        };
+
+        n9 {
+            bindings = <&kp NUMBER_9>;
+            key-positions = <8 18>;
+            layers = <0>;
+        };
+
+        n0 {
+            bindings = <&kp NUMBER_0>;
+            key-positions = <9 19>;
+            layers = <0>;
+        };
+
+
+
+
+
     };
 
     macros {
