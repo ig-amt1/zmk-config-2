@@ -103,7 +103,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         };
 
         quest {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp BR_QMARK>;
             key-positions = <29 28 27>;
             layers = <0>;
         };
