@@ -4,8 +4,8 @@ on:
   push:
     paths:
       - ".github/workflows/draw-keymaps.yml"
-      - "config/*.dtsi"
-      - "config/*.keymap"
+      - "config/boards/shields/totem/totem.dtsi"
+      - "config/totem.keymap"
       - "keymap-drawer/config.yaml"
 
 jobs:
