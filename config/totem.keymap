@@ -135,6 +135,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         paste {
             bindings = <&paste>;
             key-positions = <23 24>;
+            layers = <0>;
         };
 
         n1 {
@@ -146,6 +147,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         n2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <1 11>;
+            layers = <0>;
         };
 
         n3 {
