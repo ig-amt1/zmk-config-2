@@ -15,14 +15,33 @@ parse_config:
     '&kp LS(TAB)': Win Prev
     '&kp LS(INS)': Paste
 
-    '&out OUT_USB': Out USB
-    '&out OUT_BLE': Out BLE
+    "&bt BT_SEL 0":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 1
+    "&bt BT_SEL 1":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 2
+    "&bt BT_SEL 2":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 3
+    "&bt BT_SEL 3":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 4
+    "&bt BT_SEL 4":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 5
+    "&out OUT_TOG":
+      shifted: $$mdi:usb$$
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
 
-    '&bt BT_SEL 0': BT 1
-    '&bt BT_SEL 1': BT 2
-    '&bt BT_SEL 2': BT 3
-    '&bt BT_SEL 3': BT 4
-    '&bt BT_SEL 4': BT 5
+     BT_CLR: $$mdi:bluetooth-off$$
+     BT_SEL: $$mdi:bluetooth-connect$$
 
     '&mmv MOVE_UP': M↑
     '&mmv MOVE_DOWN': M↓
@@ -49,25 +68,27 @@ parse_config:
 
   zmk_keycode_map:
     # custom mappings
-    C_VOL_UP: Vol Up
-    C_VOL_DN: Vol Down
+    C_VOL_UP:  $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-low$$
     C_AL_CALC: Calc
     C_PP: Play Pause
 
-    LCTRL: Ctrl
-    RCTRL: Ctrl
-    LALT: Alt
-    RALT: Alt
-    LGUI: Gui
-    RGUI: Gui
-    LSHFT: Shift
-    RSHFT: Shift
-    ESC: Esc
-    SPACE: ␣
+    LCTRL: $$mdi:apple-keyboard-control$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    RALT: $$mdi:apple-keyboard-option$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    ESC:  $$mdi:keyboard-esc$$
+    #SPACE: ␣
+    SPACE: $$mdi:keyboard-space$$
     BSPC: ⌫
     RET: ⏎
     TAB: ↹
     DEL: ⌦
+    ENTER: ⏎
 
     PG_UP: Page Up
     PG_DN: Page Down
@@ -78,10 +99,10 @@ parse_config:
     PSCRN: Print Scrn
     PAUSE_BREAK: Pause Break
 
-    UP: ↑
-    DOWN: ↓
-    LEFT: ←
-    RIGHT: →
+     UP: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
 
     C_PP: ⏯
     C_NEXT: ⏭️
