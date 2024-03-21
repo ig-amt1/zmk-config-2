@@ -12,14 +12,14 @@ layers:
   - O
   - P
   - A
-  - {t: S, h: ALT}
-  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: Alt}
+  - {t: D, h: Shift}
+  - {t: F, h: Ctrl}
   - G
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: RALT}
+  - {t: J, h: Ctrl}
+  - {t: K, h: Shift}
+  - {t: L, h: Alt}
   - /
   - ''
   - Z
@@ -34,10 +34,10 @@ layers:
   - INT1
   - ''
   - ''
-  - {t: '$$mdi:keyboard-tab$$', h: function}
-  - {t: '$$mdi:keyboard-space$$', h: number}
+  - {t: ↹, h: function}
+  - {t: ␣, h: number}
   - {t: ENTER, h: symbol}
-  - {t: '$$mdi:backspace-outline$$', h: nav}
+  - {t: ⌫, h: nav}
   - ''
   number:
   - LS(1)
@@ -119,9 +119,9 @@ layers:
   - ''
   function:
   - ''
-  - {t: '$$mdi:bluetooth-connect$$', h: '0', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-connect$$', h: '1', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2', type: text_with_symbol}
+  - BT 1
+  - BT 2
+  - BT 3
   - ''
   - ''
   - F1
@@ -130,7 +130,7 @@ layers:
   - F4
   - ''
   - ''
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
+  - OUT TOG
   - ''
   - ''
   - ''
@@ -139,7 +139,7 @@ layers:
   - F7
   - F8
   - ''
-  - {t: '$$mdi:bluetooth$$', h: '$$mdi:close-thick$$', type: text_with_symbol}
+  - BT CLR
   - ''
   - ''
   - ''
@@ -157,28 +157,28 @@ layers:
   - ''
   - ''
   game:
-  - $$mdi:keyboard-tab$$
+  - ↹
   - Q
   - W
   - E
   - R
-  - $$mdi:volume-plus$$
+  - Vol Up
   - Y
   - T
   - P
-  - {t: game, h: '$$mdi:toggle-switch$$'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: game, h: toggle}
+  - Shift
   - A
   - S
   - D
   - F
-  - $$mdi:volume-minus$$
+  - Vol Down
   - M
   - L
   - ;
-  - $$mdi:volume-mute$$
+  - MUTE
   - ''
-  - $$mdi:apple-keyboard-control$$
+  - Ctrl
   - Z
   - X
   - C
@@ -187,42 +187,42 @@ layers:
   - O
   - J
   - V
-  - $$mdi:microsoft-windows$$
+  - Gui
   - ''
   - ''
-  - {t: ESC, h: fgame}
-  - $$mdi:keyboard-space$$
+  - {t: Esc, h: fgame}
+  - ␣
   - ''
-  - $$mdi:backspace-outline$$
+  - BACKSPACE
   - ''
   nav:
   - Page Up
-  - HOME
+  - Home
   - ''
   - ''
   - ''
   - VOLUME UP
   - ''
-  - $$mdi:arrow-up$$
+  - ↑
   - ''
-  - CAPS
+  - Caps Lock
   - Page Down
-  - END
+  - End
   - ''
   - ''
   - ''
   - VOLUME DOWN
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
-  - $$mdi:backspace-reverse-outline$$
+  - ←
+  - ↓
+  - →
+  - ⌦
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - $$mdi:volume-mute$$
+  - MUTE
   - '&guilt'
   - '&gui_up'
   - '&guirt'
@@ -240,17 +240,17 @@ layers:
   - '3'
   - '4'
   - '5'
-  - $$mdi:volume-plus$$
+  - Vol Up
   - Y
   - N
   - V
-  - CAPS
+  - Caps Lock
   - F6
   - B
   - M
   - T
   - G
-  - $$mdi:volume-minus$$
+  - Vol Down
   - J
   - T
   - I
@@ -265,17 +265,17 @@ layers:
   - M
   - ','
   - .
-  - $$mdi:microsoft-windows$$
+  - Gui
   - ''
   - ''
   - {type: held}
   - ''
   - ''
-  - $$mdi:backspace-outline$$
+  - BACKSPACE
   - ''
 combos:
 - p: [34, 13, 12]
-  k: {t: game, h: '$$mdi:toggle-switch$$'}
+  k: {t: game, h: toggle}
   l: [base]
 - p: [0, 1, 2, 3]
   k: '&close'
@@ -284,13 +284,13 @@ combos:
   k: PRINTSCREEN
   l: [base]
 - p: [22, 23, 24, 21]
-  k: '&caps_word'
+  k: Caps Wrd
   l: [base]
 - p: [11, 12, 13]
-  k: ESC
+  k: Esc
   l: [base]
 - p: [8, 9]
-  k: $$mdi:backspace-reverse-outline$$
+  k: ⌦
   l: [base]
 - p: [29, 28, 27]
   k: LS(INT1)
