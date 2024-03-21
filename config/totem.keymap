@@ -354,7 +354,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
             bindings = <
        &kp PG_UP  &kp HOME  &none  &none  &none  &kp C_VOLUME_UP    &none     &kp UP    &none      &kp CAPS
        &kp PG_DN  &kp END   &none  &none  &none  &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL
-&none  &none      &none     &none  &none  &none  &kp C_MUTE         &guileft  &gui_up   &guiright  &none     &none
+&none  &none      &none     &none  &none  &none  &kp C_MUTE         &guilt  &gui_up   &guirt  &none     &none
                             &none  &none  &none  &none              &none     &none
             >;
         };
