@@ -164,35 +164,35 @@ parse_config:
     BR_RBKT BSLH : ]
     BR_BSLH  NUBS  : \
   
-    BR_COMMA  COMMA : ','
-    BR_DOT  DOT : '.' 
-    BR_SEMI SLASH : ';'
-    BR_SLASH INT1  : '/'
-    BR_KP_DOT  KP_COMMA: '.'
-    BR_KP_COMMA   KP_DOT  : ','
+    BR_COMMA  COMMA : ,
+    BR_DOT  DOT : . 
+    BR_SEMI SLASH : ;
+    BR_SLASH INT1  : /
+    BR_KP_DOT  KP_COMMA: .
+    BR_KP_COMMA   KP_DOT  : ,
     
-    BR_DQT LS(BR_SQT) : '"'
-    BR_EXCL LS(BR_N1) : '!'
-    BR_AT   LS(BR_N2)   : '@'
-    BR_HASH  LS(BR_N3)  : '#'
-    BR_DLLR LS(BR_N4)  : '$'
-    BR_PRCNT LS(BR_N5) : '%'
-    BR_DIAE LS(BR_N6) : '¨'
-    BR_AMPS   LS(BR_N7)  : '&'
-    BR_ASTRK  LS(BR_N8)   : '*'
-    BR_LPAR  LS(BR_N9)   : '('
-    BR_RPAR  LS(BR_N0)   : ')'
-    BR_UNDER LS(BR_MINUS) : '_'
-    BR_PLUS  LS(BR_EQUAL) : '+'
-    BR_GRAVE LS(BR_ACUT) : '`'
-    BR_LBRC  LS(BR_LBKT) : '{'
-    BR_CIRC  LS(BR_TILDE) : '^'
-    BR_RBRC  LS(BR_RBKT)  : '}'
-    BR_PIPE  LS(BR_BSLH)  : '|'
-    BR_LT LS(BR_COMMA)  : '<'
-    BR_GT LS(BR_DOT)   : '>'
-    BR_COLON LS(BR_SEMI) : ':'
-    BR_QMARK LS(BR_SLASH) : '?'
+    BR_DQT LS(BR_SQT) : "
+    BR_EXCL LS(BR_N1) : !
+    BR_AT   LS(BR_N2)   : @
+    BR_HASH  LS(BR_N3)  : #
+    BR_DLLR LS(BR_N4)  : $
+    BR_PRCNT LS(BR_N5) : %
+    BR_DIAE LS(BR_N6) : ¨
+    BR_AMPS   LS(BR_N7)  : &
+    BR_ASTRK  LS(BR_N8)   : *
+    BR_LPAR  LS(BR_N9)   : (
+    BR_RPAR  LS(BR_N0)   : )
+    BR_UNDER LS(BR_MINUS) : _
+    BR_PLUS  LS(BR_EQUAL) : +
+    BR_GRAVE LS(BR_ACUT) : `
+    BR_LBRC  LS(BR_LBKT) : {
+    BR_CIRC  LS(BR_TILDE) : ^
+    BR_RBRC  LS(BR_RBKT)  : }
+    BR_PIPE  LS(BR_BSLH)  : |
+    BR_LT LS(BR_COMMA)  : <
+    BR_GT LS(BR_DOT)   : >
+    BR_COLON LS(BR_SEMI) : :
+    BR_QMARK LS(BR_SLASH) : ?
     
     BR_SUP1    : '¹'
     BR_SUP2 : '²'
