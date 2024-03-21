@@ -153,16 +153,7 @@ parse_config:
     UNDER: _
     UNDERSCORE: _
     BR_SQT GRAVE   : '''
-    BR_N1   : '1'
-    BR_N2    : '2'
-    BR_N3    : '3'
-    BR_N4    : '4'
-    BR_N5    : '5'
-    BR_N6   : '6'
-    BR_N7   : '7'
-    BR_N8   : '8'
-    BR_N9   : '9'
-    BR_N0   : '0'
+    
     BR_MINUS  : '-'
     BR_EQUAL     : '='
   
