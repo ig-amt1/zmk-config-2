@@ -195,7 +195,4 @@ parse_config:
     BR_QMARK LS(BR_SLASH) : ?
     
    
-    NUBS : '\'
-    INT1 : '/'
-
-    
+ 
