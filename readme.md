@@ -1,6 +1,6 @@
-
+    
 <div align="center">
   
-  ![sweep-layout](https://user-images.githubusercontent.com/master/keymap-drawer/totem.svg)
+  ![sweep-layout](https://github.com/ig-amt1/zmk-config-2/blob/master/keymap-drawer/totem.svg)
 
 </div>
