@@ -18,16 +18,12 @@ AC_KEY(A_acute, BR_A, BR_ACUT)
 AC_KEY(A_grave, BR_A, BR_GRAVE)
 AC_KEY(A_tilde, BR_A, BR_TILDE)
 AC_KEY(A_circ,  BR_A, BR_CIRC)
-
 AC_KEY(E_acute, BR_E, BR_ACUT)
 AC_KEY(E_circ,  BR_E, BR_CIRC)
-
 AC_KEY(I_acute, BR_I, BR_ACUT)
-
 AC_KEY(O_acute, BR_O, BR_ACUT)
 AC_KEY(O_tilde, BR_O, BR_TILDE)
 AC_KEY(O_circ,  BR_O, BR_CIRC)
-
 AC_KEY(U_acute, BR_U, BR_ACUT)
 
 UNDEAD_KEY(tilde, BR_TILDE)
@@ -224,9 +220,9 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&A_tilde>;
         };
 
-        guileft: guileft {
+        guilt: guilt {
             compatible = "zmk,behavior-macro";
-            label = "GUILEFT";
+            label = "GUILT";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -237,9 +233,9 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp LEFT_GUI>;
         };
 
-        guiright: guiright {
+        guirt: guirt {
             compatible = "zmk,behavior-macro";
-            label = "GUIRIGHT";
+            label = "GUIRT";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
