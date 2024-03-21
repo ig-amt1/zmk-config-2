@@ -194,17 +194,7 @@ parse_config:
     BR_COLON LS(BR_SEMI) : :
     BR_QMARK LS(BR_SLASH) : ?
     
-    BR_SUP1    : '¹'
-    BR_SUP2 : '²'
-    BR_SUP3    : '³'
-    BR_PND   : '£'
-    BR_CENT : '¢'
-    BR_NOT   : '¬'
-    BR_SECT ALGR : '§'
-    BR_DEG      : '°'
-    BR_FORD  : 'ª'
-    BR_MORD: 'º'
-    BR_CRUZ : '₢'
+   
     NUBS : '\'
     INT1 : '/'
 
