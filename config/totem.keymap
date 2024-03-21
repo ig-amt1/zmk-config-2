@@ -317,7 +317,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         number_layer {
             bindings = <
        &kp BR_EXCL    &kp BR_AT     &kp BR_HASH     &kp  BR_DLLR    &kp BR_PRCNT        &kp PLUS      &kp N7        &kp N8        &kp N9   &kp BR_BSLH
-       &kp BR_DQT     &kp BR_AMPS   &kp BR_ASTRK    &kp BR_LPAR     &kp BR_RPAR         &kp MINUS     &kp N4        &kp N5        &kp N6   &kp COMMA
+       &kp BR_GRAVE    &kp BR_AMPS   &kp BR_ASTRK    &kp BR_LPAR     &kp BR_RPAR         &kp MINUS     &kp N4        &kp N5        &kp N6   &kp COMMA
 &none  &kp BR_UNDER   &kp BR_LBRC   &kp BR_RBRC     &kp BR_LT       &kp BR_GT          &kp BR_COLON   &kp N1        &kp N2        &kp N3   &kp BR_EQUAL  &none
                                           &none    &none    &none                       &kp BR_ASTRK  &kp BR_N0     &none
             >;
