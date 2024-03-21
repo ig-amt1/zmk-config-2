@@ -1,0 +1,433 @@
+draw_config:
+  line_spacing: 1.0
+  arc_radius: 8.0
+  append_colon_to_layer_header: false
+  small_pad: 1.0
+  draw_key_sides: true
+
+  svg_extra_style: |
+    svg.keymap {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+    }
+        
+    text.label {
+      stroke: #dfdfde;
+      stroke-width: 12;
+      stroke-linejoin: round;
+    }
+    
+    rect.combo, rect.combo-separate {
+      opacity: 0.95;
+      stroke: #c9cccf;
+      stroke-width: 0.5;
+      fill: #d7eaed;
+    }
+    path.combo {
+      stroke-dasharray: 4, 4;
+      stroke-opacity: 0.3;
+    } 
+    
+    rect.held, rect.combo.held {
+      fill: #ebdada;
+    }
+    
+    .trans.tap, .ghost.tap {
+      opacity: 0.5;
+    } 
+    
+    .shifted {
+      translate: -9px 3px;
+      opacity: 0.3;
+    }
+    
+    .toggle.shifted {
+      translate: -12px 17px;
+      opacity: 1.0;
+    }
+    .toggle.hold {
+      translate: 12px -25px;
+    } 
+    
+    .text_with_symbol.tap {
+      translate: -1px 1px;
+    } 
+    .text_with_symbol.hold {
+      translate: 6px -31px;
+      font-size: 8px;
+    } 
+    
+  shrink_wide_legends: 7
+  
+  glyph_tap_size: 14
+  glyph_hold_size: 8
+  glyph_shifted_size: 8
+  
+  glyphs: {}
+  glyph_urls:
+    tabler: https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+    
+  use_local_cache: true
+  
+parse_config:
+  preprocess: true
+  skip_binding_parsing: false
+  mark_alternate_layer_activators: true
+  zmk_remove_keycode_prefix: ["DE_"]
+    
+  sticky_label: $$mdi:circle-small$$
+  toggle_label: $$mdi:toggle-switch$$
+  
+  trans_legend:
+    tap: $$mdi:chevron-down$$
+    type: trans
+  
+  raw_binding_map: 
+      
+    '&sys_reset': 
+      tap: $$mdi:backup-restore$$
+      type: bootloader
+      
+    '&bootloader': 
+      tap: $$mdi:progress-download$$
+      type: bootloader
+      
+    '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
+    '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
+
+    '&key_repeat': $$mdi:repeat$$
+
+    '&mt LA(F4) LC(W)': $$mdi:close-box-outline$$
+    
+    '&hmr_lpar_lt LS(LCTRL) 0':
+      tap: '('
+      shifted: '<'
+    '&hmr_rpar_gt LA(LCTRL) 0':
+      tap: ')'
+      shifted: '>'
+    
+    '&lbkt_lbrc':
+      tap: '['
+      shifted: '{'
+    '&rbkt_rbrc':
+      tap: ']'
+      shifted: '}'
+    
+    '&hmr_lpar_lbrc LS(LCTRL) 0':
+      tap: '('
+      shifted: '{'
+    '&hmr_rpar_rbrc LA(LCTRL) 0':
+      tap: ')'
+      shifted: '}'
+    
+    '&lbkt_lt':
+      tap: '['
+      shifted: '<'
+    '&rbkt_gt':
+      tap: ']'
+      shifted: '>'
+    
+    '&td_sqt_dqt':
+      tap: "'"
+      shifted: '"'
+      
+    '&rcw LSHFT 0':
+      tap: $$mdi:keyboard-return$$
+      hold: $$mdi:apple-keyboard-shift$$
+
+    '&scw LSHFT 0': $$mdi:apple-keyboard-shift$$
+
+    '&kp DE_COMMA':
+      tap: ','
+      shifted: ';'
+    
+    '&kp DE_DOT':
+      tap: '.'
+      shifted: ':'
+    
+    '&bt BT_CLR':
+      tap: $$mdi:bluetooth$$
+      hold: $$mdi:close-thick$$
+      type: text_with_symbol
+    '&bt BT_SEL 0':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '0'
+      type: text_with_symbol
+    '&bt BT_SEL 1':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '1'
+      type: text_with_symbol
+    '&bt BT_SEL 2':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '2'
+      type: text_with_symbol
+    '&bt BT_SEL 3':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '3'
+      type: text_with_symbol
+    '&bt BT_SEL 4':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '4'
+      type: text_with_symbol
+    '&bts 0':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '0'
+      type: text_with_symbol
+    '&bts 1':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '1'
+      type: text_with_symbol
+    '&bts 2':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '2'
+      type: text_with_symbol
+    '&bts 3':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '3'
+      type: text_with_symbol
+    '&bts 4':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '4'
+      type: text_with_symbol
+    '&bt BT_DISC 0':
+      tap: $$mdi:bluetooth-off$$
+      hold: '0'
+      type: text_with_symbol
+    '&bt BT_DISC 1':
+      tap: $$mdi:bluetooth-off$$
+      hold: '1'
+      type: text_with_symbol
+    '&bt BT_DISC 2':
+      tap: $$mdi:bluetooth-off$$
+      hold: '2'
+      type: text_with_symbol
+    '&bt BT_DISC 3':
+      tap: $$mdi:bluetooth-off$$
+      hold: '3'
+      type: text_with_symbol
+    '&bt BT_DISC 4':
+      tap: $$mdi:bluetooth-off$$
+      hold: '4'
+      type: text_with_symbol
+    '&bt BT_PRV':
+      tap: $$mdi:bluetooth$$
+      hold: $$mdi:skip-previous$$
+      type: text_with_symbol
+    '&bt BT_NXT':
+      tap: $$mdi:bluetooth$$
+      hold: $$mdi:skip-next$$
+      type: text_with_symbol
+    
+    '&out OUT_BLE': $$mdi:bluetooth$$
+    '&out OUT_USB': $$mdi:usb$$
+    '&out OUT_TOG':
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
+      shifted: $$mdi:usb$$
+      type: toggle
+    
+    '&mkp LCLK': $$mdi:cursor-default-click-outline$$
+    '&mkp RCLK': $$mdi:cursor-default-click$$
+    '&mkp MB3':
+      tap: $$mdi:cursor-default-click-outline$$
+      hold: 3
+      type: text_with_symbol
+    '&mkp MB4':
+      tap: $$mdi:cursor-default-click-outline$$
+      hold: 4
+      type: text_with_symbol
+    '&mkp MB5':
+      tap: $$mdi:cursor-default-click-outline$$
+      hold: 5
+      type: text_with_symbol
+    
+  zmk_combos:
+    combo_par:
+      align: bottom
+      offset: 1.05
+      draw_separate: true
+      key:
+        tap: '()'
+        shifted: '{}'
+    combo_bkt:
+      align: top
+      offset: 0.6
+      draw_separate: true
+      key:
+        tap: '[]'
+        shifted: '<>'
+    combo_ger:
+      align: top
+      offset: 0.6
+    combo_bl:
+      align: top
+      offset: 1.2
+      
+  zmk_keycode_map:
+    LALT: ALT
+    
+    SPACE: $$mdi:keyboard-space$$
+    # ESC: $$mdi:keyboard-esc$$
+    
+    BACKSPACE: $$mdi:backspace-outline$$
+    BSPC: $$mdi:backspace-outline$$
+    LC(BSPC): $$mdi:backspace$$
+    
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+    LC(DEL): $$mdi:backspace-reverse$$
+
+    PSCRN: $$mdi:monitor-screenshot$$
+    
+    TAB: $$mdi:keyboard-tab$$
+    LS(TAB): $$mdi:keyboard-tab-reverse$$
+    
+    RETURN: $$mdi:keyboard-return$$
+    RET: $$mdi:keyboard-return$$
+    
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
+    
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
+    
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
+    
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
+
+    LGUI: $$mdi:microsoft-windows$$
+    RGUI: $$mdi:microsoft-windows$$
+    
+    C_PP: $$mdi:play-pause$$
+    C_NEXT: $$mdi:skip-forward$$
+    C_PREV: $$mdi:skip-backward$$
+    
+    C_MUTE: $$mdi:volume-mute$$
+    C_VOL_UP: $$mdi:volume-plus$$
+    C_VOL_DN: $$mdi:volume-minus$$
+    
+    C_BRI_UP: $$tabler:brightness-up$$
+    C_BRI_DN: $$tabler:brightness-down$$
+    
+    C_POWER: $$mdi:power$$
+    C_SLEEP: $$mdi:power-sleep$$
+
+    C_AL_CALC: $$mdi:calculator$$
+    
+    UP: $$mdi:arrow-up$$
+    DOWN: $$mdi:arrow-down$$
+    LEFT: $$mdi:arrow-left$$
+    RIGHT: $$mdi:arrow-right$$
+
+    # HOME: $$mdi:format-horizontal-align-left$$
+    # END: $$mdi:format-horizontal-align-right$$
+    LC(HOME): $$mdi:format-vertical-align-top$$
+    LC(END): $$mdi:format-vertical-align-bottom$$
+    
+    PG_UP: Page Up
+    PG_DN: Page Down
+
+    LC(INS): $$mdi:content-copy$$
+    LS(INS): $$mdi:content-paste$$
+    LS(DEL): $$mdi:content-cut$$
+    LC(X): $$mdi:content-cut$$
+    LC(Z): $$mdi:undo$$
+    LC(Y): $$mdi:redo$$
+    LC(LS(Z)): $$mdi:redo$$
+
+    LC(F): $$mdi:text-search$$
+    LC(W): $$mdi:close-box-outline$$
+    LA(F4): $$mdi:close-box-outline$$
+
+    PAUSE_BREAK: Pause Break
+
+    LC(PLUS): $$mdi:magnify-plus-outline$$
+    LC(MINUS): $$mdi:magnify-minus-outline$$
+    LC(N0): $$mdi:magnify-remove-outline$$
+
+    SECT: '§'
+    DEG: '°'
+    EURO: '€'
+
+    A_UMLAUT: 'Ä'
+    AE: 'Ä'
+    U_UMLAUT: 'Ü'
+    UE: 'Ü'
+    O_UMLAUT: 'Ö'
+    OE: 'Ö'
+    SZ: 'ß'
+    ACUTE: '´'
+    
+    # default
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: $
+    DLLR: $
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: ^
+    AMPERSAND: '&'
+    AMPS: '&'
+    ASTERISK: '*'
+    ASTRK: '*'
+    STAR: '*'
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL: '='
+    PLUS: +
+    MINUS: '-'
+    UNDERSCORE: _
+    UNDER: _
+    SLASH: /
+    FSLH: /
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH: \
+    BSLH: \
+    PIPE: '|'
+    NON_US_BACKSLASH: \
+    PIPE2: '|'
+    NON_US_BSLH: '|'
+    SEMICOLON: ;
+    SEMI: ;
+    COLON: ':'
+    SINGLE_QUOTE: ''''
+    SQT: ''''
+    APOSTROPHE: ''''
+    APOS: ''''
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA: ','
+    LESS_THAN: <
+    LT: <
+    PERIOD: .
+    DOT: .
+    GREATER_THAN: '>'
+    GT: '>'
+    LEFT_BRACKET: '['
+    LBKT: '['
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACKET: ']'
+    RBKT: ']'
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    GRAVE: '`'
+    TILDE: '~'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    TILDE2: '~'
