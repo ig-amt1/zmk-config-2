@@ -193,6 +193,3 @@ parse_config:
     BR_GT LS(BR_DOT)   : >
     BR_COLON LS(BR_SEMI) : :
     BR_QMARK LS(BR_SLASH) : ?
-    
-   
- 
