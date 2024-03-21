@@ -1,4 +1,4 @@
-/*draw_config:
+draw_config:
   line_spacing: 1.0
   arc_radius: 8.0
   append_colon_to_layer_header: false
