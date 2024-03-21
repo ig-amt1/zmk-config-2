@@ -59,82 +59,82 @@ draw_config:
     } 
     
   shrink_wide_legends: 7
-
+  
   glyph_tap_size: 14
   glyph_hold_size: 8
   glyph_shifted_size: 8
-
+  
   glyphs: {}
   glyph_urls:
     tabler: https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
-
+    
   use_local_cache: true
-
+  
 parse_config:
   preprocess: true
   skip_binding_parsing: false
   mark_alternate_layer_activators: true
   zmk_remove_keycode_prefix: ["DE_"]
-
+    
   sticky_label: $$mdi:circle-small$$
   toggle_label: $$mdi:toggle-switch$$
-
+  
   trans_legend:
     tap: $$mdi:chevron-down$$
     type: trans
-
+  
   raw_binding_map: 
-
+      
     '&sys_reset': 
       tap: $$mdi:backup-restore$$
       type: bootloader
-
+      
     '&bootloader': 
       tap: $$mdi:progress-download$$
       type: bootloader
-
+      
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
 
     '&key_repeat': $$mdi:repeat$$
 
     '&mt LA(F4) LC(W)': $$mdi:close-box-outline$$
-
+    
     '&hmr_lpar_lt LS(LCTRL) 0':
       tap: '('
       shifted: '<'
     '&hmr_rpar_gt LA(LCTRL) 0':
       tap: ')'
       shifted: '>'
-
+    
     '&lbkt_lbrc':
       tap: '['
       shifted: '{'
     '&rbkt_rbrc':
       tap: ']'
       shifted: '}'
-
+    
     '&hmr_lpar_lbrc LS(LCTRL) 0':
       tap: '('
       shifted: '{'
     '&hmr_rpar_rbrc LA(LCTRL) 0':
       tap: ')'
       shifted: '}'
-
+    
     '&lbkt_lt':
       tap: '['
       shifted: '<'
     '&rbkt_gt':
       tap: ']'
       shifted: '>'
-
+    
     '&td_sqt_dqt':
       tap: "'"
       shifted: '"'
-
+      
     '&rcw LSHFT 0':
       tap: $$mdi:keyboard-return$$
       hold: $$mdi:apple-keyboard-shift$$
@@ -144,11 +144,11 @@ parse_config:
     '&kp DE_COMMA':
       tap: ','
       shifted: ';'
-
+    
     '&kp DE_DOT':
       tap: '.'
       shifted: ':'
-
+    
     '&bt BT_CLR':
       tap: $$mdi:bluetooth$$
       hold: $$mdi:close-thick$$
@@ -221,7 +221,7 @@ parse_config:
       tap: $$mdi:bluetooth$$
       hold: $$mdi:skip-next$$
       type: text_with_symbol
-
+    
     '&out OUT_BLE': $$mdi:bluetooth$$
     '&out OUT_USB': $$mdi:usb$$
     '&out OUT_TOG':
@@ -229,11 +229,7 @@ parse_config:
       hold: $$mdi:bluetooth$$
       shifted: $$mdi:usb$$
       type: toggle
-      
-
-
-
-
+    
     '&mkp LCLK': $$mdi:cursor-default-click-outline$$
     '&mkp RCLK': $$mdi:cursor-default-click$$
     '&mkp MB3':
@@ -248,7 +244,7 @@ parse_config:
       tap: $$mdi:cursor-default-click-outline$$
       hold: 5
       type: text_with_symbol
-
+    
   zmk_combos:
     combo_par:
       align: bottom
@@ -270,62 +266,62 @@ parse_config:
     combo_bl:
       align: top
       offset: 1.2
-
+      
   zmk_keycode_map:
     LALT: ALT
-
+    
     SPACE: $$mdi:keyboard-space$$
     # ESC: $$mdi:keyboard-esc$$
-
+    
     BACKSPACE: $$mdi:backspace-outline$$
     BSPC: $$mdi:backspace-outline$$
     LC(BSPC): $$mdi:backspace$$
-
+    
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
     LC(DEL): $$mdi:backspace-reverse$$
 
     PSCRN: $$mdi:monitor-screenshot$$
-
+    
     TAB: $$mdi:keyboard-tab$$
     LS(TAB): $$mdi:keyboard-tab-reverse$$
-
+    
     RETURN: $$mdi:keyboard-return$$
     RET: $$mdi:keyboard-return$$
-
+    
     LCTRL: $$mdi:apple-keyboard-control$$
     LEFT_CONTROL: $$mdi:apple-keyboard-control$$
-
+    
     RCTRL: $$mdi:apple-keyboard-control$$
     RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
-
+    
     LSHFT: $$mdi:apple-keyboard-shift$$
     LSHIFT: $$mdi:apple-keyboard-shift$$
     LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
-
+    
     RSHFT: $$mdi:apple-keyboard-shift$$
     RSHIFT: $$mdi:apple-keyboard-shift$$
     RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
 
     LGUI: $$mdi:microsoft-windows$$
     RGUI: $$mdi:microsoft-windows$$
-
+    
     C_PP: $$mdi:play-pause$$
     C_NEXT: $$mdi:skip-forward$$
     C_PREV: $$mdi:skip-backward$$
-
+    
     C_MUTE: $$mdi:volume-mute$$
     C_VOL_UP: $$mdi:volume-plus$$
     C_VOL_DN: $$mdi:volume-minus$$
-
+    
     C_BRI_UP: $$tabler:brightness-up$$
     C_BRI_DN: $$tabler:brightness-down$$
-
+    
     C_POWER: $$mdi:power$$
     C_SLEEP: $$mdi:power-sleep$$
 
     C_AL_CALC: $$mdi:calculator$$
-
+    
     UP: $$mdi:arrow-up$$
     DOWN: $$mdi:arrow-down$$
     LEFT: $$mdi:arrow-left$$
@@ -335,7 +331,7 @@ parse_config:
     # END: $$mdi:format-horizontal-align-right$$
     LC(HOME): $$mdi:format-vertical-align-top$$
     LC(END): $$mdi:format-vertical-align-bottom$$
-
+    
     PG_UP: Page Up
     PG_DN: Page Down
 
@@ -369,7 +365,7 @@ parse_config:
     OE: 'Ö'
     SZ: 'ß'
     ACUTE: '´'
-
+    
     # default
     EXCLAMATION: '!'
     EXCL: '!'
@@ -437,112 +433,103 @@ parse_config:
     TILDE2: '~'
 
 
-
-
-
- BR_SQT GRAVE   : ´'´
- BR_N1   : ´1´
- BR_N2    : ´2´
- BR_N3    : ´3´
- BR_N4    : ´4´
- BR_N5    : ´5´
- BR_N6   : ´6´
- BR_N7   : ´7´
- BR_N8   : ´8´
- BR_N9   : ´9´
- BR_N0   : ´0´
- BR_MINUS  : ´-´
- BR_EQUAL     : ´=´
- BR_Q       : ´Q´
- BR_W   : ´W´
- BR_E      : ´E´
- BR_R      : ´R´
- BR_T      : ´T´
- BR_Y      : ´Y´
- BR_U      : ´U´
- BR_I     : ´I´
- BR_O    : ´O´
- BR_P     : ´P´
- BR_ACUT  : ´´´ 
- BR_LBKT  : ´[´
- BR_A     : ´A´
- BR_S     : ´S´
- BR_D     : ´D´
- BR_F     : ´F´
- BR_G     : ´G´
- BR_H     : ´H´
- BR_J     : ´J´
- BR_K     : ´K´
- BR_L     : ´L´
- BR_CCED  : ´Ç´
- BR_TILDE : ´~´
- BR_RBKT  : ´]´
- BR_BSLH  : ´\´
- BR_Z     : ´Z´
- BR_X     : ´X´
- BR_C     : ´C´
- BR_V     : ´V´
- BR_B     : ´B´
- BR_N     : ´N´
- BR_M     : ´M´
- BR_COMMA : ´,´
- BR_DOT   : ´.´ 
- BR_SEMI  : ´;´
- BR_SLASH : ´/´
- BR_KP_DOT: ´.´
- BR_KP_COMMA   : ´,´
- BR_DQT : ´"´
-BR_EXCL : ´!´
-BR_AT     : ´@´
-BR_HASH    : ´#´
-BR_DLLR  : ´$´
-BR_PRCNT : ´%´
-BR_DIAE : ´¨´ 
-BR_AMPS    : ´&´
-BR_ASTRK    : ´*´
-BR_LPAR    : ´(´
-BR_RPAR    : ´)´
-BR_UNDER : ´_´ 
-BR_PLUS : ´+´
-BR_GRAVE  : ´ `´ 
-BR_LBRC : ´{´
-BR_CIRC : ´^´ 
-BR_RBRC  : ´}´
-BR_PIPE  : ´|´
-BR_LT : ´<´
-BR_GT   : ´>´
-BR_COLON : ´:´
-BR_QMARK : ´?´
-BR_SUP1    : ´¹´
-BR_SUP2 : ´²´
-BR_SUP3    : ´³´
-BR_PND   : ´£´
-BR_CENT : ´¢´
-BR_NOT   : ´¬´
-BR_SECT ALGR : ´§´
-BR_DEG      : ´°´
-BR_FORD  : ´ª´
-BR_MORD: ´º´
-BR_CRUZ : ´₢
-cao : ´çã´
-BR_CIRC : ´^´ 
-&U_acute : ´ú´
-&A_tilde : ´ã´
-&O_tilde : ´õ´
-&kp BR_CCED : ´ç´
-&kp BR_ACUT : ´´´
-&I_acute : ´í´
-&A_acute : ´á´
-&O_acute : ´ó´
-&E_acute : ´é´ 
-BR_TILDE : ´~´
-&E_circ : ´ê´
-&A_circ : ´â´
-&O_circ : ´ô´
-&A_grave : ´à´
-
-
-
-
-
-
+    BR_SQT GRAVE   : ´'´
+    BR_N1   : ´1´
+    BR_N2    : ´2´
+    BR_N3    : ´3´
+    BR_N4    : ´4´
+    BR_N5    : ´5´
+    BR_N6   : ´6´
+    BR_N7   : ´7´
+    BR_N8   : ´8´
+    BR_N9   : ´9´
+    BR_N0   : ´0´
+    BR_MINUS  : ´-´
+    BR_EQUAL     : ´=´
+    BR_Q       : ´Q´
+    BR_W   : ´W´
+    BR_E      : ´E´
+    BR_R      : ´R´
+    BR_T      : ´T´
+    BR_Y      : ´Y´
+    BR_U      : ´U´
+    BR_I     : ´I´
+    BR_O    : ´O´
+    BR_P     : ´P´
+    BR_ACUT  : ´´´ 
+    BR_LBKT  : ´[´
+    BR_A     : ´A´
+    BR_S     : ´S´
+    BR_D     : ´D´
+    BR_F     : ´F´
+    BR_G     : ´G´
+    BR_H     : ´H´
+    BR_J     : ´J´
+    BR_K     : ´K´
+    BR_L     : ´L´
+    BR_CCED  : ´Ç´
+    BR_TILDE : ´~´
+    BR_RBKT  : ´]´
+    BR_BSLH  : ´\´
+    BR_Z     : ´Z´
+    BR_X     : ´X´
+    BR_C     : ´C´
+    BR_V     : ´V´
+    BR_B     : ´B´
+    BR_N     : ´N´
+    BR_M     : ´M´
+    BR_COMMA : ´,´
+    BR_DOT   : ´.´ 
+    BR_SEMI  : ´;´
+    BR_SLASH : ´/´
+    BR_KP_DOT: ´.´
+    BR_KP_COMMA   : ´,´
+    BR_DQT : ´"´
+    BR_EXCL : ´!´
+    BR_AT     : ´@´
+    BR_HASH    : ´#´
+    BR_DLLR  : ´$´
+    BR_PRCNT : ´%´
+    BR_DIAE : ´¨´ 
+    BR_AMPS    : ´&´
+    BR_ASTRK    : ´*´
+    BR_LPAR    : ´(´
+    BR_RPAR    : ´)´
+    BR_UNDER : ´_´ 
+    BR_PLUS : ´+´
+    BR_GRAVE  : ´ `´ 
+    BR_LBRC : ´{´
+    BR_CIRC : ´^´ 
+    BR_RBRC  : ´}´
+    BR_PIPE  : ´|´
+    BR_LT : ´<´
+    BR_GT   : ´>´
+    BR_COLON : ´:´
+    BR_QMARK : ´?´
+    BR_SUP1    : ´¹´
+    BR_SUP2 : ´²´
+    BR_SUP3    : ´³´
+    BR_PND   : ´£´
+    BR_CENT : ´¢´
+    BR_NOT   : ´¬´
+    BR_SECT ALGR : ´§´
+    BR_DEG      : ´°´
+    BR_FORD  : ´ª´
+    BR_MORD: ´º´
+    BR_CRUZ : ´₢
+    cao : ´çã´
+    BR_CIRC : ´^´ 
+    &U_acute : ´ú´
+    &A_tilde : ´ã´
+    &O_tilde : ´õ´
+    BR_CCED : ´ç´
+    BR_ACUT : ´´´
+    &I_acute : ´í´
+    &A_acute : ´á´
+    &O_acute : ´ó´
+    &E_acute : ´é´ 
+    BR_TILDE : ´~´
+    &E_circ : ´ê´
+    &A_circ : ´â´
+    &O_circ : ´ô´
+    &A_grave : ´à´
