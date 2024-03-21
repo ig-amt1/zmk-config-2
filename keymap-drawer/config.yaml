@@ -152,18 +152,17 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
-    BR_SQT GRAVE   : '''
-    
-    BR_MINUS  : '-'
-    BR_EQUAL     : '='
+    BR_SQT GRAVE   : '
+    BR_MINUS  : -
+    BR_EQUAL     : =
   
-    BR_ACUT  LBKT : '´'
-    BR_LBKT RBKT : '['
+    BR_ACUT  LBKT : ´
+    BR_LBKT RBKT : [
    
-    BR_CCED SEMI : 'Ç'
-    BR_TILDE SQT : '~'
-    BR_RBKT BSLH : ']'
-    BR_BSLH  NUBS  : '\'
+    BR_CCED SEMI : Ç
+    BR_TILDE SQT : ~
+    BR_RBKT BSLH : ]
+    BR_BSLH  NUBS  : \
   
     BR_COMMA  COMMA : ','
     BR_DOT  DOT : '.' 
