@@ -20,7 +20,7 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - SLASH
+  - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
   - X
@@ -29,14 +29,14 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
   - INT1
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-tab$$', h: function}
   - {t: '$$mdi:keyboard-space$$', h: number}
-  - {t: ENTER, h: symbol}
+  - {t: '$$mdi:keyboard-return$$', h: symbol}
   - {t: '$$mdi:backspace$$', h: nav}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   number:
@@ -46,20 +46,20 @@ layers:
   - LS(4)
   - LS(5)
   - +
-  - '7'
-  - '8'
-  - '9'
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
   - NUBS
   - LS(GRAVE)
   - LS(7)
   - LS(8)
   - LS(9)
   - LS(0)
-  - '-'
-  - '4'
-  - '5'
-  - '6'
-  - ','
+  - {t: '-', s: _}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: ',', s: <}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LS(MINUS)
   - LS(RBKT)
@@ -67,16 +67,16 @@ layers:
   - LS(COMMA)
   - LS(DOT)
   - LS(SLASH)
-  - '1'
-  - '2'
-  - '3'
-  - '='
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - LS(8)
-  - '0'
+  - {t: '0', s: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   symbol:
   - LS(8)
@@ -88,24 +88,24 @@ layers:
   - {t: '&U_acute_down', s: '&U_acute_up'}
   - {t: '&A_tilde_down', s: '&A_tilde_up'}
   - {t: '&O_tilde_down', s: '&O_tilde_up'}
-  - ;
+  - {t: ;, s: ':'}
   - LS(SLASH)
   - LS(2)
   - LS(9)
   - LS(0)
   - LS(GRAVE)
-  - '['
+  - {t: '[', s: '{'}
   - {t: '&I_acute_down', s: '&I_acute_up'}
   - {t: '&A_acute_down', s: '&A_acute_up'}
   - {t: '&O_acute_down', s: '&O_acute_up'}
   - {t: '&E_acute_down', s: '&E_acute_up'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LS(1)
-  - PERCENT
-  - ']'
-  - \
+  - '%'
+  - {t: ']', s: '}'}
+  - {t: \, s: '|'}
   - LS(NUBS)
-  - ''''
+  - {t: '''', s: '"'}
   - {t: '&E_circ_down', s: '&E_circ_up'}
   - {t: '&A_circ_down', s: '&A_circ_up'}
   - {t: '&O_circ_down', s: '&O_circ_up'}
@@ -119,9 +119,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   function:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F1
@@ -162,7 +162,7 @@ layers:
   - W
   - E
   - R
-  - $$mdi:volume-plus$$
+  - $$mdi:volume-high$$
   - Y
   - T
   - P
@@ -172,11 +172,11 @@ layers:
   - S
   - D
   - F
-  - $$mdi:volume-minus$$
+  - $$mdi:volume-low$$
   - M
   - L
-  - ;
-  - $$mdi:volume-mute$$
+  - {t: ;, s: ':'}
+  - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -187,42 +187,42 @@ layers:
   - O
   - J
   - V
-  - $$mdi:apple-keyboard-command$$
+  - LGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Esc, h: fgame}
+  - {t: '$$mdi:keyboard-esc$$', h: fgame}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - BACKSPACE
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   nav:
-  - $$mdi:chevron-double-up$$
+  - PG UP
   - HOME
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:volume-plus$$
+  - VOLUME UP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - ↑
+  - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - CAPS
-  - $$mdi:chevron-double-down$$
+  - $$mdi:apple-keyboard-caps$$
+  - PG DN
   - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:volume-minus$$
-  - ←
-  - ↓
-  - →
-  - Del
+  - VOLUME DOWN
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:volume-mute$$
+  - $$mdi:volume-off$$
   - '&guileft'
   - '&gui_up'
   - '&guiright'
@@ -240,17 +240,17 @@ layers:
   - '3'
   - '4'
   - '5'
-  - $$mdi:volume-plus$$
+  - $$mdi:volume-high$$
   - Y
   - N
   - V
-  - CAPS
+  - $$mdi:apple-keyboard-caps$$
   - F6
   - B
   - M
   - T
   - G
-  - $$mdi:volume-minus$$
+  - $$mdi:volume-low$$
   - J
   - T
   - I
@@ -263,9 +263,9 @@ layers:
   - F5
   - N
   - M
-  - ','
+  - {t: ',', s: <}
   - PERIOD
-  - $$mdi:apple-keyboard-command$$
+  - RGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
@@ -287,10 +287,10 @@ combos:
   k: $$mdi:alpha-w-box$$
   l: [base]
 - p: [11, 12, 13]
-  k: Esc
+  k: $$mdi:keyboard-esc$$
   l: [base]
 - p: [8, 9]
-  k: Del
+  k: $$mdi:backspace-reverse-outline$$
   l: [base]
 - p: [29, 28, 27]
   k: LS(INT1)
