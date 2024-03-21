@@ -517,19 +517,4 @@ parse_config:
     BR_FORD  : ´ª´
     BR_MORD: ´º´
     BR_CRUZ : ´₢
-    cao : ´çã´
-    BR_CIRC : ´^´ 
-    &U_acute : ´ú´
-    &A_tilde : ´ã´
-    &O_tilde : ´õ´
-    BR_CCED : ´ç´
-    BR_ACUT : ´´´
-    &I_acute : ´í´
-    &A_acute : ´á´
-    &O_acute : ´ó´
-    &E_acute : ´é´ 
-    BR_TILDE : ´~´
-    &E_circ : ´ê´
-    &A_circ : ´â´
-    &O_circ : ´ô´
-    &A_grave : ´à´
+    
