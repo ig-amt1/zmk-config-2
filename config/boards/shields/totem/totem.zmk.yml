@@ -3,14 +3,9 @@ id: totem
 name: TOTEM
 type: shield
 url: https://github.com/GEIGEIGEIST/TOTEM
-requires: 
-  - seeeduino_xiao_ble
-  - pro_micro
-exposes:
-  - i2c_oled
+requires: [seeeduino_xiao_ble]
 features:
   - keys
 siblings:
   - totem_left
   - totem_right
-  - totem_dongle
