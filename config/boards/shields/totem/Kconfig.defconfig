@@ -1,19 +1,25 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_TOTEM_LEFT
+if SHIELD_PULSO_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "TOTEM"
+    default "PULSO"
     
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+    default y
+
 endif
 
-if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT
+if SHIELD_PULSO_LEFT || SHIELD_PULSO_RIGHT || SHIELD_PULSO_DONGLE
 
 config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
     default y
 
 endif
