@@ -69,14 +69,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        lswp: lswp {
-            label = "SWAP";
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&sk LGUI>, <&tog SWP>;
-        };
     };
 
     combos {
