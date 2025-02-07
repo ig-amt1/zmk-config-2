@@ -361,10 +361,10 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         nav_layer {
             bindings = <
-       &kp PG_UP  &kp HOME  &none  &none  &none  &kp C_VOL_UP  &none     &kp UP    &none      &kp CAPS
-       &kp PG_DN  &kp END   &none  &none  &none  &kp C_VOL_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL
-&none  &none      &none     &none  &none  &none  &kp C_MUTE    &guilt    &gui_up   &guirt     &none     &none
-                            &none  &none  &none  &none         &none     &none
+       &kp PG_UP  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &none  &kp C_VOL_UP  &none     &kp UP    &none      &kp CAPS
+       &kp PG_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &kp C_VOL_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL
+&none  &none      &none           &none           &none            &none  &kp C_MUTE    &guilt    &gui_up   &guirt     &none     &none
+                                  &none           &none            &none  &none         &none     &none
             >;
         };
 
