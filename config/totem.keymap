@@ -49,16 +49,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
             bindings = <&kp>, <&kp>;
         };
 
-        lt_qk: layer_toggle_quick {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TOGGLE_QUICK";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <QUICK_TAP_MS>;
-            bindings = <&mo>, <&kp>;
-        };
-
+        
         mt_sk: mod_tap_sticky {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_STICKY";
