@@ -1,7 +1,18 @@
 include:
+#  - board: seeeduino_xiao_ble
+#    shield: totem_left
+#  - board: seeeduino_xiao_ble
+#    shield: totem_right
+  
+# there is no settingsreset (needed) for the XIAO
+include:
   - board: seeeduino_xiao_ble
     shield: totem_left
   - board: seeeduino_xiao_ble
     shield: totem_right
-  
-# there is no settingsreset (needed) for the XIAO
+  - board: seeeduino_xiao_ble
+    shield: totem_dongle
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
