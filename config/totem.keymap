@@ -16,6 +16,7 @@
 #define gam  4
 #define NAV  5
 #define FGM  6
+#define tec  7
 
 AC_KEY(A_acute, BR_A, BR_ACUT)
 AC_KEY(A_grave, BR_A, BR_GRAVE)
