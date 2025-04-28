@@ -6,8 +6,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NUM  1
@@ -202,6 +200,21 @@ UNDEAD_KEY(grave, BR_GRAVE)
             bindings = <&tog 7>;
             key-positions = <33 36>;
             layers = <0>;
+        };
+
+        til {
+            bindings = <&kp I>;
+            key-positions = <8 7>;
+        };
+
+        circun {
+            bindings = <&kp I>;
+            key-positions = <17 18>;
+        };
+
+        agud {
+            bindings = <&kp I>;
+            key-positions = <28 29>;
         };
     };
 
