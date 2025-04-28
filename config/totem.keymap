@@ -202,19 +202,28 @@ UNDEAD_KEY(grave, BR_GRAVE)
             layers = <0>;
         };
 
-        til {
-            bindings = <&kp I>;
-            key-positions = <8 7>;
-        };
-
-        circun {
-            bindings = <&kp I>;
-            key-positions = <17 18>;
+        circ {
+            bindings = <&kp BR_CIRC>;
+            key-positions = <7 8>;
+            layers = <0>;
         };
 
         agud {
-            bindings = <&kp I>;
+            bindings = <&kp BR_ACUT>;
+            key-positions = <17 18>;
+            layers = <0>;
+        };
+
+        til {
+            bindings = <&kp BR_TILDE>;
             key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        grave {
+            bindings = <&kp BR_GRAVE>;
+                key-positions = <16 17>;
+            layers = <0>;
         };
     };
 

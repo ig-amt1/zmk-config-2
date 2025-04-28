@@ -421,9 +421,15 @@ combos:
 - p: [33, 36]
   k: {t: tecinfo, h: toggle}
   l: [base]
-- p: [8, 7]
-  k: I
+- p: [7, 8]
+  k: Sft+'
+  l: [base]
 - p: [17, 18]
-  k: I
+  k: '['
+  l: [base]
 - p: [28, 29]
-  k: I
+  k: ''''
+  l: [base]
+- p: [16, 17]
+  k: Sft+[
+  l: [base]
