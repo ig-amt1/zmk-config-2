@@ -293,7 +293,7 @@ layers:
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  - {t: ▽, type: trans}
+  - LEFT GUI
   - {t: ▽, type: trans}
   - LCTRL
   - P

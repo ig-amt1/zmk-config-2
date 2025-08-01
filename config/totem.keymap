@@ -222,7 +222,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         grave {
             bindings = <&kp BR_GRAVE>;
-                key-positions = <16 17>;
+            key-positions = <16 17>;
             layers = <0>;
         };
     };
@@ -403,8 +403,8 @@ UNDEAD_KEY(grave, BR_GRAVE)
         tecinfo {
             bindings = <
         &kp TAB    &kp F1    &kp UP    &kp F2     &kp F4    &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp N5
-        &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp F10   &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans  &kp LCTRL  &kp P     &kp C     &kp F5     &kp DEL   &trans          &trans          &trans          &trans           &kp BSPC  &trans
+        &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp F10   &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_GUI
+&trans  &kp LCTRL  &kp P     &kp C     &kp F5     &kp DEL   &trans          &trans          &trans          &trans           &kp BSPC      &trans
                              &trans    &kp ESC    &kp LALT  &trans          &tog 7          &trans
             >;
         };
