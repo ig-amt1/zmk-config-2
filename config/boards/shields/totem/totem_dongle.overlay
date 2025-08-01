@@ -5,6 +5,10 @@
  */
 
 / {
+    chosen {
+        zmk,kscan = &kscan_0;
+    };
+
     kscan_0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
@@ -12,18 +16,8 @@
                    <&gpio0 3 GPIO_ACTIVE_HIGH>;
         row-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
         
-        // Adicione estas propriedades
+        // Propriedades obrigatórias para o ZMK Studio
         rows = <1>;
         columns = <2>;
-    };
-};
-
-/ {
-    chosen {
-        zmk,kscan = &kscan_0;
-    };
-
-    kscan_0: kscan {
-        ...
     };
 };
