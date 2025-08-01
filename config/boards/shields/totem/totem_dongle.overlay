@@ -1,12 +1,18 @@
-/*
- * Copyright (c) 2022 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
+#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
         zmk,kscan = &kscan_0;
+        zmk,matrix_transform = &default_transform;
+    };
+
+    default_transform: matrix_transform_0 {
+        compatible = "zmk,matrix-transform";
+        rows = <1>;
+        columns = <2>;
+        map = <
+            RC(0,0) RC(0,1)
+        >;
     };
 
     kscan_0: kscan {
@@ -15,9 +21,5 @@
         col-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>,
                    <&gpio0 3 GPIO_ACTIVE_HIGH>;
         row-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
-        
-        // Propriedades obrigatórias para o ZMK Studio
-        rows = <1>;
-        columns = <2>;
     };
 };
