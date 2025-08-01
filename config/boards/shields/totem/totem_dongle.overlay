@@ -6,18 +6,18 @@
 
  #include "totem.dtsi"
 
-/# &kscan0 {
-#    col-gpios
-#       = <&xiao_d 8 GPIO_ACTIVE_HIGH>
-#     , <&xiao_d 9 GPIO_ACTIVE_HIGH>
-#     , <&xiao_d 10 GPIO_ACTIVE_HIGH>
-#    , <&xiao_d 5 GPIO_ACTIVE_HIGH>
-#   , <&xiao_d 4 GPIO_ACTIVE_HIGH>
-#  ;
-#};/
+//# &kscan0 {
+//#    col-gpios
+//#       = <&xiao_d 8 GPIO_ACTIVE_HIGH>
+//#     , <&xiao_d 9 GPIO_ACTIVE_HIGH>
+//#     , <&xiao_d 10 GPIO_ACTIVE_HIGH>
+//#    , <&xiao_d 5 GPIO_ACTIVE_HIGH>
+//#   , <&xiao_d 4 GPIO_ACTIVE_HIGH>
+//#  ;
+//# };
 
 
- {
+/ {
     kscan_0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
