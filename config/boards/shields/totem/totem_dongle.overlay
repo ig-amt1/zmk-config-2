@@ -10,9 +10,17 @@
         compatible = "zmk,matrix-transform";
         rows = <1>;
         columns = <2>;
-        map = <
-            RC(0,0) RC(0,1)
-        >;
+        map = <RC(0,0) RC(0,1)>;
+    };
+
+    zmk,studio-settings {
+        compatible = "zmk,studio-settings";
+        display-name = "Totem Dongle";
+        manufacturer-name = "Your Name";
+        firmware-version = "1.0.0";
+        home-page = "https://github.com/your-repo";
+        source-code-url = "https://github.com/your-repo/zmk-config";
+        issues-url = "https://github.com/your-repo/issues";
     };
 
     kscan_0: kscan {
