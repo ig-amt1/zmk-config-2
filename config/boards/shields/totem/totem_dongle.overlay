@@ -17,3 +17,13 @@
         columns = <2>;
     };
 };
+
+/ {
+    chosen {
+        zmk,kscan = &kscan_0;
+    };
+
+    kscan_0: kscan {
+        ...
+    };
+};
