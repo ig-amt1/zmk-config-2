@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: totem}
 layers:
-  number: [Sft+1, Sft+2, Sft+3, Sft+4, Sft+5, +, '7', '8', '9', NUBS, 'Sft+[', Sft+7, Sft+8, Sft+9, Sft+0, '-', '4', '5', '6', ',', '', Sft+-, 'Sft+]', Sft+\, 'Sft+,',
-    Sft+., Sft+/, '1', '2', '3', '=', '', '', '', '', Sft+8, '0', '']
+  number: [Sft+1, Sft+2, Sft+3, Sft+4, Sft+5, +, '7', '8', '9', '0', 'Sft+[', Sft+7, Sft+8, Sft+9, Sft+0, '-', '4', '5', '6', ',', '', Sft+-, 'Sft+]', Sft+\, 'Sft+,',
+    Sft+., NUBS, '1', '2', '3', '=', '', '', '', '', Sft+8, '0', '']
   '8':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
