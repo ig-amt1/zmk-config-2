@@ -60,170 +60,170 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         game {
             timeout-ms = <50>;
-            bindings = <&tog 4>;
+            bindings = <&tog 5>;
             key-positions = <34 13 12>;
-            layers = <0>;
+            layers = <2>;
         };
 
         close {
             timeout-ms = <50>;
             bindings = <&close>;
             key-positions = <0 1 2 3>;
-            layers = <0>;
+            layers = <2>;
         };
 
         prtsc_combo {
             timeout-ms = <50>;
             bindings = <&kp PRINTSCREEN>;
             key-positions = <5 4>;
-            layers = <0>;
+            layers = <2>;
         };
 
         caps {
             timeout-ms = <50>;
             bindings = <&caps_word>;
             key-positions = <22 23 24 21>;
-            layers = <0>;
+            layers = <2>;
         };
 
         esc {
             timeout-ms = <50>;
             bindings = <&kp ESC>;
             key-positions = <11 12 13>;
-            layers = <0>;
+            layers = <2>;
         };
 
         del {
             timeout-ms = <50>;
             bindings = <&kp DEL>;
             key-positions = <8 9>;
-            layers = <0>;
+            layers = <2>;
         };
 
         quest {
             bindings = <&kp BR_QMARK>;
             key-positions = <29 28 27>;
-            layers = <0>;
+            layers = <2>;
         };
 
         lgui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <10 11>;
-            layers = <0>;
+            layers = <2>;
         };
 
         rgui {
             bindings = <&kp RIGHT_GUI>;
             key-positions = <19 18>;
-            layers = <0>;
+            layers = <2>;
         };
 
         lock {
             bindings = <&lock>;
             key-positions = <6 7 8>;
-            layers = <5>;
+            layers = <6>;
         };
 
         copy {
             bindings = <&copy>;
             key-positions = <23 22>;
-            layers = <0>;
+            layers = <2>;
         };
 
         paste {
             bindings = <&paste>;
             key-positions = <23 24>;
-            layers = <0>;
+            layers = <2>;
         };
 
         n1 {
             bindings = <&kp NUMBER_1>;
             key-positions = <0 10>;
-            layers = <0>;
+            layers = <2>;
         };
 
         n2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <1 11>;
-            layers = <0>;
+            layers = <2>;
         };
 
         n3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <2 12>;
-            layers = <0>;
+            layers = <2>;
         };
 
         n4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <3 13>;
-            layers = <0>;
+            layers = <2>;
         };
 
         n5 {
             bindings = <&kp NUMBER_5>;
             key-positions = <4 14>;
-            layers = <0>;
+            layers = <2>;
         };
 
         n6 {
             bindings = <&kp NUMBER_6>;
             key-positions = <5 15>;
-            layers = <0>;
+            layers = <2>;
         };
 
         n7 {
             bindings = <&kp NUMBER_7>;
             key-positions = <6 16>;
-            layers = <0>;
+            layers = <2>;
         };
 
         n8 {
             bindings = <&kp NUMBER_8>;
             key-positions = <7 17>;
-            layers = <0>;
+            layers = <2>;
         };
 
         n9 {
             bindings = <&kp NUMBER_9>;
             key-positions = <8 18>;
-            layers = <0>;
+            layers = <2>;
         };
 
         n0 {
             bindings = <&kp NUMBER_0>;
             key-positions = <9 19>;
-            layers = <0>;
+            layers = <2>;
         };
 
         tec {
-            bindings = <&tog 7>;
+            bindings = <&tog 8>;
             key-positions = <33 36>;
-            layers = <0>;
+            layers = <2>;
         };
 
         circ {
             bindings = <&kp BR_CIRC>;
             key-positions = <7 8>;
-            layers = <0>;
+            layers = <2>;
         };
 
         agud {
             bindings = <&kp BR_ACUT>;
             key-positions = <17 18>;
-            layers = <0>;
+            layers = <2>;
         };
 
         til {
             bindings = <&kp BR_TILDE>;
             key-positions = <28 29>;
-            layers = <0>;
+            layers = <2>;
         };
 
         grave {
             bindings = <&kp BR_GRAVE>;
             key-positions = <16 17>;
-            layers = <0>;
+            layers = <2>;
         };
     };
 
@@ -337,21 +337,30 @@ UNDEAD_KEY(grave, BR_GRAVE)
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
-            bindings = <
-       &kp Q  &kp W       &kp E        &kp R        &kp T        &kp Y        &kp U        &kp I        &kp O       &kp P
-       &kp A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G        &kp H        &hm RCTRL J  &hm RSHFT K  &hm RALT L  &kp BR_SEMI
-&none  &kp Z  &kp X       &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &kp DOT     &kp BR_SLASH  &none
-                          &none        &lt 3 TAB    &lt 1 SPACE  &lt 2 ENTER  &lt 5 BSPC   &none
-            >;
-        };
-
         number_layer {
             bindings = <
        &kp BR_EXCL   &kp BR_AT    &kp BR_HASH   &kp BR_DLLR  &kp BR_PRCNT  &kp PLUS      &kp N7     &kp N8  &kp N9  &kp BR_BSLH
        &kp BR_GRAVE  &kp BR_AMPS  &kp BR_ASTRK  &kp BR_LPAR  &kp BR_RPAR   &kp MINUS     &kp N4     &kp N5  &kp N6  &kp COMMA
 &none  &kp BR_UNDER  &kp BR_LBRC  &kp BR_RBRC   &kp BR_LT    &kp BR_GT     &kp BR_COLON  &kp N1     &kp N2  &kp N3  &kp BR_EQUAL  &none
                                   &none         &none        &none         &kp BR_ASTRK  &kp BR_N0  &none
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        base_layer {
+            bindings = <
+       &kp Q  &kp W       &kp E        &kp R        &kp T        &kp Y        &kp U        &kp I        &kp O       &kp P
+       &kp A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G        &kp H        &hm RCTRL J  &hm RSHFT K  &hm RALT L  &kp BR_SEMI
+&none  &kp Z  &kp X       &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &kp DOT     &kp BR_SLASH  &none
+                          &none        &lt 4 TAB    &lt 0 SPACE  &lt 3 ENTER  &lt 6 BSPC   &none
             >;
         };
 
@@ -375,10 +384,10 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         game_layer {
             bindings = <
-       &kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp C_VOL_UP  &kp Y          &kp T  &kp P          &tog 4
+       &kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp C_VOL_UP  &kp Y          &kp T  &kp P          &tog 5
        &kp LSHFT  &kp A  &kp S  &kp D      &kp F      &kp C_VOL_DN  &kp M          &kp L  &kp SEMICOLON  &kp C_MUTE
 &none  &kp LCTRL  &kp Z  &kp X  &kp C      &kp B      &kp N         &kp O          &kp J  &kp V          &kp LGUI    &none
-                         &none  &lt 6 ESC  &kp SPACE  &none         &kp BACKSPACE  &none
+                         &none  &lt 7 ESC  &kp SPACE  &none         &kp BACKSPACE  &none
             >;
         };
 
@@ -405,16 +414,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         &kp TAB    &kp F1    &kp UP    &kp F2     &kp F4    &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp N5
         &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp F10   &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_GUI
 &trans  &kp LCTRL  &kp P     &kp C     &kp F5     &kp DEL   &trans          &trans          &trans          &trans           &kp BSPC      &trans
-                             &trans    &kp ESC    &kp LALT  &trans          &tog 7          &trans
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans    &kp ESC    &kp LALT  &trans          &tog 8          &trans
             >;
         };
     };
